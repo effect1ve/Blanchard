@@ -199,46 +199,76 @@ modalOverlay.addEventListener('click', (e) => {
   const inputMask = new Inputmask('+7 (999) 999-99-99');
   inputMask.mask(telSelector);
 
-  new window.JustValidate('#form', {
-    rules: {
-      tel: {
-        required: true,
-        function: () => {
-          const phone = telSelector.inputmask.unmaskedvalue();
-          return Number(phone) && phone.length === 10;
-        }
-      }
+ const validation = new JustValidate(
+  '#form',
+  {
+    errorLabelStyle: {
+      color: '#d11616',
     },
-    messages: {
-      name: {
-        required: 'Введите имя',
-        minLength: 'Введите 2 и более символов',
-        maxLength: 'Запрещено вводить более 15 символов'
+
+  },
+);
+
+validation
+  .addField('#name', [
+    {
+      rule: 'required',
+      errorMessage: 'Введите ваше имя',
+    },
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: 'Введите более 2-х символов',
+    },
+    {
+      rule: 'maxLength',
+      value: 15,
+      errorMessage: 'Введите не более 15-ти символов'
+    },
+    {
+      rule: 'customRegexp',
+      value: /^[а-яА-ЯёЁa-zA-Z]+$/,
+      errorMessage: 'Неверный формат',
+    },
+  ])
+  .addField('#tel', [
+    {
+      rule: 'required',
+      errorMessage: 'Укажите ваш телефон',
+    },
+     {
+      rule: 'function',
+      validator: function() {
+        const phone = telSelector.inputmask.unmaskedvalue();
+        return phone.length === 10;
       },
-      tel: {
-        required: 'Введите телефон',
-        function: 'Здесь должно быть 10 символов'
-      }
+      errorMessage: 'Введите корректный телефон',
     },
-    submitHandler: function(thisForm) {
-      let formData = new FormData(thisForm);
+    
+  ]).onSuccess((event) => {
 
-      let xhr = new XMLHttpRequest();
+    let formData = new FormData(event.target);
+    let xhr = new XMLHttpRequest();
 
-      xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-          if (xhr.status === 200) {
-            console.log('Отправлено')
-          }
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+         let doneMessage = document.querySelector('.feedback__message');
+         console.log('message is send')
         }
       }
-
-      xhr.open('POST', 'mail.php', true);
-      xhr.send(formData);
-
-      thisForm.reset();
     }
-  })
+
+    xhr.open('POST', 'mail.php', true);
+    xhr.send(formData);
+
+    event.target.reset();
+  });
+
+
+
+
+
 
 });
 
