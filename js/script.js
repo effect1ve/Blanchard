@@ -2,18 +2,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const swiperHero = new Swiper('.swiper-hero', {
   //параметры
-  slidesPerView: 'auto',
-  slidesPerGroup: 1,
-  speed: 10000,
-  loop: true,
-  effect: 'fade',
   allowTouchMove: false,
-  centeredSlides: true,
-  autoplay: {
-      delay: 10000,
-      disableOnInteraction: false,
-  },
-});
+    loop: true,
+    effect: 'fade',
+    speed: 10000,
+    autoplay: {
+      delay: 10000
+    }
+  });
 
 // hero__neck dropdown
 

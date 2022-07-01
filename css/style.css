@@ -252,6 +252,7 @@ body {
 .hero {
 	position: relative;
 	z-index: 10;
+	overflow: hidden;
 }
 
 .hero__neck-container {
@@ -266,8 +267,25 @@ body {
 .swiper-hero {
 	position: absolute;
 	z-index: -1;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
+	animation-name: resize;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes resize {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
 }
 
 
@@ -654,6 +672,7 @@ body {
 	outline-offset: 5px;
 	outline: 2px solid #D1A9F0;
 }
+
 
 /*about*/
 
