@@ -256,11 +256,11 @@
         </select>
         <div class="gallery__checkbox">
             <label class="gallery__checkbox-label" tabindex="-1">
-              <input type="radio" class="checkbox visually-hidden" name="check" tabindex="0" checked>
+              <input type="radio" class="checkbox visually-hidden" name="check" tabindex="0">
               <span class="gallery__checkbox-text">XIX век</span>
             </label>
             <label class="gallery__checkbox-label" tabindex="-1">
-              <input type="radio" class="checkbox visually-hidden" name="check" tabindex="0">
+              <input type="radio" class="checkbox visually-hidden" name="check" tabindex="0" checked>
               <span class="gallery__checkbox-text">XX век</span>
             </label>
             <label class="gallery__checkbox-label" tabindex="-1">
@@ -270,9 +270,11 @@
         </div>
       </div>
       <div class="gallery__right">
-            <div class="swiper-button-prev gallery__prev"></div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next gallery__next"></div>
+        <div class="gallery-controls">
+          <div class="swiper-button-prev gallery__prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next gallery__next"></div>
+        </div>  
         <div class="swiper swiper-gallery">
           <div class="swiper-wrapper gallery__wrapper">
 
@@ -483,7 +485,7 @@
 
           <ul class="accordion__list" id="accordion">
             <li class="accordion__item">
-              <h3 class='accordion__title'>С 1400 по 1499 гг.</h3>
+              <h3 class='accordion__title year-1'>С 1400 по 1499 гг.</h3>
               <div class="accordion__content flex">
                 <ul class="accordion__content-list">
                   <li class="accordion__content-item">
@@ -566,7 +568,7 @@
               </div>
             </li>
             <li class="accordion__item">
-              <h3 class='accordion__title'>С 1500 по 1599 гг.</h3>
+              <h3 class='accordion__title year-2'>С 1500 по 1599 гг.</h3>
               <div class="accordion__content flex">
                 <div class="accordion__empty-img-border">
                   <div class="accordion__empty-img"></div>
@@ -583,7 +585,7 @@
               </div>
             </li>
             <li class="accordion__item">
-              <h3 class='accordion__title'>С 1600 по 1699 гг.</h3>
+              <h3 class='accordion__title year-3'>С 1600 по 1699 гг.</h3>
               <div class="accordion__content flex">
                 <div class="accordion__empty-img-border">
                   <div class="accordion__empty-img"></div>
@@ -600,7 +602,7 @@
               </div>
             </li>
             <li class="accordion__item">
-              <h3 class='accordion__title'>С 1700 по 1799 гг.</h3>
+              <h3 class='accordion__title year-4'>С 1700 по 1799 гг.</h3>
               <div class="accordion__content flex">
                 <div class="accordion__empty-img-border">
                   <div class="accordion__empty-img"></div>
@@ -617,7 +619,7 @@
               </div>
             </li>
             <li class="accordion__item">
-              <h3 class='accordion__title'>С 1800 по 1899 гг.</h3>
+              <h3 class='accordion__title year-5'>С 1800 по 1899 гг.</h3>
               <div class="accordion__content flex">
                 <div class="accordion__empty-img-border">
                   <div class="accordion__empty-img"></div>
@@ -634,7 +636,7 @@
               </div>
             </li>
             <li class="accordion__item">
-              <h3 class='accordion__title'>С 1900 по 1999 гг.</h3>
+              <h3 class='accordion__title year-6'>С 1900 по 1999 гг.</h3>
               <div class="accordion__content flex">
                 <div class="accordion__empty-img-border">
                   <div class="accordion__empty-img"></div>
@@ -651,7 +653,7 @@
               </div>
             </li>
             <li class="accordion__item">
-              <h3 class='accordion__title border_bottom'>С 2000 г.</h3>
+              <h3 class='accordion__title year-7'>С 2000 г.</h3>
               <div class="accordion__content flex">
                 <div class="accordion__empty-img-border">
                   <div class="accordion__empty-img"></div>
@@ -694,11 +696,13 @@
                 </picture>
                 <div class="events__card-pad">
                   <div class="events__card-info">
-                    <span class="events__card-date">
+                    <span class="events__card-name">
                       Музей им. Щусева
+                    </span>
+                    <span class="events__card-date">
                       с 20 марта по 30 апреля
                     </span>
-                    <h4 class="events__card-title title">
+                    <h4 class="events__card-title ev_crd-pad title">
                       Книжная гравюра в живом восприятии
                     </h4>
                     <p class="events__card-descr descr">
@@ -720,8 +724,10 @@
                 </picture>
                 <div class="events__card-pad">
                   <div class="events__card-info">
-                    <span class="events__card-date">
+                    <span class="events__card-name">
                       ММОМА
+                    </span>
+                    <span class="events__card-date">
                       24 марта 19:00
                     </span>
                     <h4 class="events__card-title title">
@@ -746,8 +752,10 @@
                 </picture>
                 <div class="events__card-pad">
                   <div class="events__card-info">
-                    <span class="events__card-date">
+                    <span class="events__card-name">
                       Еврейский музей
+                    </span>
+                    <span class="events__card-date">
                       с 31 марта по 21 апреля
                     </span>
                     <h4 class="events__card-title title">
@@ -772,8 +780,9 @@
                 </picture>
                 <div class="events__card-pad">
                   <div class="events__card-info">
-                    <span class="events__card-date">
+                    <span class="events__card-name">
                       ММАМ
+                    </span>
                       с 8 апреля по 20 мая
                     </span>
                     <h4 class="events__card-title title">
@@ -798,8 +807,10 @@
                 </picture>
                 <div class="events__card-pad">
                   <div class="events__card-info">
-                    <span class="events__card-date">
+                    <span class="events__card-name">
                       Третьяковка на Крымском валу
+                    </span>
+                    <span class="events__card-date">
                       с 30 марта по 30 апреля
                     </span>
                     <h4 class="events__card-title title">

@@ -59,7 +59,7 @@ for(let i = 0;i < dropFocus.length; i++) {
 
 const gallerySwiper = new Swiper('.swiper-gallery', {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 44,
   slidesPerGroup: 3,
   loop: false,
   // loopFillGroupWithBlank: true,
