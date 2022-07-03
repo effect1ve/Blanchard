@@ -161,17 +161,6 @@ modalOverlay.addEventListener('click', (e) => {
     });
   };
 
-  // const tabFocus = document.querySelectorAll('.accordion__content-tab');
-  // for(let i = 0; i < tabFocus.length; i++) {
-  //   tabFocus[i].addEventListener('focus', function(event) {
-  //     event.target.style.color = '#fff';
-  //   }, true);
-  //   tabFocus[i].addEventListener('blur', function(event) {
-  //     event.target.style.color = '';
-  //   }, true);
-  // };
-
-
 // events-swiper
 
   const swiperEvents = new Swiper(".swiper-events", {
