@@ -37,7 +37,7 @@ btns.forEach(item => {
     });
     btns.forEach(el => {
       if (el != this) {
-        el.classList.remove(activeClassbtns)
+        el.classList.remove(activeClassbtns);
       }
     });
     DropThis.classList.toggle(activeClassdropdowns);
@@ -49,6 +49,18 @@ const dropFocus = document.querySelectorAll('.simplebar-content-wrapper');
 for(let i = 0;i < dropFocus.length; i++) {
   dropFocus[i].setAttribute('tabindex', '-1');
 }
+
+document.body.addEventListener('click',function(event) {
+  if(!event.target.closest('.menu__item')) {
+    btns.forEach(el => {
+      el.classList.remove(activeClassbtns)
+    });
+    dropdowns.forEach(el => {
+      el.classList.remove(activeClassdropdowns)
+    })
+  }
+})
+
 
 // gallery 
 
