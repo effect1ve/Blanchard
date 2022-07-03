@@ -95,6 +95,7 @@ const galleryChoices = new Choices(gallerySelector, {
 const btnsGall = document.querySelectorAll('.gallery__btn');
 const modalOverlay = document.querySelector('.modal-overlay ');
 const modals = document.querySelectorAll('.modal');
+const modalClose = document.querySelectorAll('.modal-close');
 
 btnsGall.forEach((el) => {
   el.addEventListener('click', (e) => {
@@ -120,6 +121,18 @@ modalOverlay.addEventListener('click', (e) => {
     });
   }
 });
+
+modalClose.forEach((elem) => {
+  elem.addEventListener('click', (e) => {
+    modals.forEach((el) => {
+      document.body.style.overflow = '';
+      modalOverlay.classList.remove('modal-overlay--visible');
+      el.classList.remove('modal--visible');
+    })
+  })
+})
+
+
 
 
 // accordion

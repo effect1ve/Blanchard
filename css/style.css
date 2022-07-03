@@ -1152,6 +1152,14 @@ body {
 
 .modal__description {
 	padding: 121px 50px 121px 48px;
+	position: relative;
+}
+
+.modal-close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
 }
 
 .modal__title {
