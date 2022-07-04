@@ -72,7 +72,7 @@ const gallerySwiper = new Swiper('.swiper-gallery', {
   loop: false,
   // loopFillGroupWithBlank: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".gallery__pagination",
     type: "fraction",
   },
   navigation: {
@@ -91,6 +91,10 @@ const galleryChoices = new Choices(gallerySelector, {
         containerOuter: 'choices gallery__choices',
        },
   });
+
+  document.querySelector('.choices').setAttribute('tabindex', "-1");
+  document.querySelector('.choices__inner').setAttribute('tabindex', "0");
+
 
 const btnsGall = document.querySelectorAll('.gallery__btn');
 const modalOverlay = document.querySelector('.modal-overlay ');
@@ -185,6 +189,23 @@ modalClose.forEach((elem) => {
       prevEl: '.events__swiper-prev',
       nextEl: '.events__swiper-next',
     },
+    pagination: {
+      el: '.events__swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 34,
+      slidesPerGroup: 2,
+    },
+
+    962: {
+      slidesPerView: 3,
+      spaceBetween: 27,
+      slidesPerGroup: 3,
+    },
+  },
   })
 
 

@@ -1,0 +1,10 @@
+@media (max-width: 1700px) {
+	.events__swiper-prev,
+	.events__swiper-next {
+		display: none;
+	}
+
+	.events__swiper-pagination.swiper-pagination {
+		display:  block;
+	}
+}
