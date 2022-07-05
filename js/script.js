@@ -17,6 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   })
 
+//search-clear
+
+  const searchBtn = document.querySelector('#search-btn');
+  const searchInp = document.querySelector('#search-input');
+  searchBtn.addEventListener('click', function() {
+    searchInp.value = '';
+  })
+
 //swiper-hero
 
   const swiperHero = new Swiper('.swiper-hero', {

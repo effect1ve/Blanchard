@@ -523,7 +523,6 @@ body {
 
 .search-form {
 	margin-left: auto;
-/*	position: relative;*/
 }
 
 .search-input {
@@ -534,33 +533,34 @@ body {
 	padding: 0;
 	cursor: pointer;
 	font-size: 18px;
-}
-
-.search-btn {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.85);
 	width: 218px;
 	padding-top: 5px;
 }
 
-.search-btn:hover {
+input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-search-cancel-button {
+  display: none;
+} 
+
+.search-input::-webkit-input-placeholder {
+	color: rgba(255,255, 255, .85);
+}
+
+.search-input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.search-input:hover {
 	border-color: #C283F3
 }
 
-.search-btn:focus {
+.search-input:focus-visible {
 	outline: none;
 	border-bottom: 1px solid #C283F3;
 }
 
-.search-input:focus {
+.search-btn:focus {
 	outline: none;
-}
-
-.search-input:focus::-webkit-input-placeholder,
-.search-input:focus::-moz-placeholder,
-.search-input:focus:-ms-input-placeholder,
-.search-input:focus::-ms-input-placeholder,
-.search-input:focus::placeholder  {
-	color: transparent;
 }
 
 .search-icon {
@@ -1430,9 +1430,19 @@ body {
 .ui-accordion-header:focus-visible:not(:hover):not(:active)::before {
 	content: '';
 	position: absolute;
-	width: 28%;
+	width: 26%;
   height: 26%;
-  left: 8px;
+  left: 0;
+	background: #9D5CD0;
+	z-index: -1;
+}
+
+.ui-accordion-header:focus-visible:not(:hover):not(:active).year-7::before {
+	content: '';
+	position: absolute;
+	width: 13%;
+  height: 26%;
+  left: 0;
 	background: #9D5CD0;
 	z-index: -1;
 }
@@ -2330,21 +2340,21 @@ address .location__address {
 	transition: all .3s ease;
 }
 
-.location__right-item:focus-visible:not(:hover):not(:active),
-.location__right-item:hover {
+.location__right-link:focus-visible:not(:hover):not(:active),
+.location__right-link:hover {
 	opacity: .5;
 }
 
-.location__right-item:focus-visible:not(:active) {
+.location__right-link:focus-visible:not(:active) {
 	outline: none;
 }
 
-.location__right-item:active svg {
+.location__right-link:active svg {
 	outline: 1px solid #9d5cd0;
 	border-radius: 50%;
 }
 
-.location__right-item:active{
+.location__right-link:active{
 	opacity: 1; 
 }
 
@@ -2403,6 +2413,7 @@ address .location__address {
 .footer__logo {
 	position: relative;
 	transform: translate(-2px, 2px);
+	cursor: pointer;
 }
 
 .footer__logo::after {
@@ -2423,9 +2434,11 @@ address .location__address {
   left: 0;
 }
 
-.footer__logo:focus-visible:not(:active),
-.footer__logo:focus-visible:not(:active)::after {
+.footer__logo:focus-visible {
 	outline: none;
+}
+
+.footer__logo:focus-visible::after {
 	width: 100%;
   left: 0;
 }

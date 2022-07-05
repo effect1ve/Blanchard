@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
   <main>
     <section class="header">
     <div class="container header__container">
-      <a class="header__logo" aria-label='Логотип Бланчард'>
+      <a class="header__logo" aria-label='Логотип Бланчард' tabindex="0">
         <img src="img/main_logo.svg" alt="Blanchard" class="header__logo-img">
       </a>
       <nav class="header__nav">
@@ -186,13 +186,13 @@
             </li>
           </ul>
           <form action="#" class="search-form">
-              <button class="search-btn btn" id="search-btn" type="button" aria-label="поисковая">
+              <button class="search-btn btn" id="search-btn" type="submit" aria-label="поисковая">
                 <svg class="search-icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
                 </svg>
-                <input type="text" class="search-input" id="search-input" type="search" placeholder="Поиск по сайту">
               </button>
+              <input class="search-input" id="search-input" type="search" placeholder="Поиск по сайту">
             </form>   
         </div>
       </div>
@@ -252,7 +252,7 @@
         <span class="gallery__filter-text">
           Фильтр:
         </span>
-        <select name="" id="gallery__choices" class="gallery__choices">
+        <select id="gallery__choices" class="gallery__choices">
           <option value="" tabindex="0">Живопись</option>
           <option value="" tabindex="0">Рисунок</option>
           <option value="" tabindex="0">Скульптура</option>
@@ -325,161 +325,162 @@
             </div>
           </div>
         </div>  
-
-      <div class="modals">
-        <div class="modal-overlay">
-          <div class="modal modal--1" data-target="pop-1">
-            <picture>
-              <img src="img/gallery-modal-1.png" alt="" class="modal__img">
-            </picture>
-            <div class="modal__description">
-              <h3 class="modal__title title">
-                Каземир Малевич
-              </h3>
-              <span class="modal__title-name">
-                "Женщина с&nbsp;граблями"
-              </span>
-              <span class="modal__title-years">
-                1931-1932
-              </span>
-              <p class="modal__descr descr">
-                Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича.
-            Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был
-            утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
-              </p>
-              <svg class='modal-close' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
-              </svg>
-            </div>
+        <div class="modals">
+          <div class="modal-overlay">
           </div>
-          <div class="modal modal--2" data-target="pop-2">
-            <picture>
-              <img src="img/gallery-modal-2.png" alt="" class="modal__img">
-            </picture>
-            <div class="modal__description">
-              <h3 class="modal__title title">
-                Каземир Малевич
-              </h3>
-              <span class="modal__title-name">
-                "Женщина с&nbsp;граблями"
-              </span>
-              <span class="modal__title-years">
-                1931-1932
-              </span>
-              <p class="modal__descr descr">
-                Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича.
-            Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был
-            утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
-              </p>
-              <svg class='modal-close' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
-              </svg>
+            <div class="modal modal--1" data-target="pop-1">
+              <picture>
+                <img src="img/gallery-modal-1.png" alt="" class="modal__img">
+              </picture>
+              <div class="modal__description">
+                <h3 class="modal__title title">
+                  Каземир Малевич
+                </h3>
+                <span class="modal__title-name">
+                  "Женщина с&nbsp;граблями"
+                </span>
+                <span class="modal__title-years">
+                  1931-1932
+                </span>
+                <p class="modal__descr descr">
+                  Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича.
+              Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был
+              утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
+                </p>
+                <svg class='modal-close' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
+                </svg>
+              </div>
             </div>
-          </div> 
-          <div class="modal modal--3" data-target="pop-3">
-            <picture>
-              <img src="img/gallery-modal-3.png" alt="" class="modal__img">
-            </picture>
-            <div class="modal__description">
-              <h3 class="modal__title title">
-                Каземир Малевич
-              </h3>
-              <span class="modal__title-name">
-                "Женщина с&nbsp;граблями"
-              </span>
-              <span class="modal__title-years">
-                1931-1932
-              </span>
-              <p class="modal__descr descr">
-                Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича.
-            Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был
-            утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
-              </p>
-              <svg class='modal-close' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
-              </svg>
-            </div>
-          </div>  
-          <div class="modal modal--4" data-target="pop-4">
-            <picture>
-              <img src="img/gallery-modal-4.png" alt="" class="modal__img">
-            </picture>
-            <div class="modal__description">
-              <h3 class="modal__title title">
-                Каземир Малевич
-              </h3>
-              <span class="modal__title-name">
-                "Женщина с&nbsp;граблями"
-              </span>
-              <span class="modal__title-years">
-                1931-1932
-              </span>
-              <p class="modal__descr descr">
-                Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича.
-            Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был
-            утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
-              </p>
-              <svg class='modal-close' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
-              </svg>
-            </div>
-          </div>
-          <div class="modal modal--5" data-target="pop-5">
-            <picture>
-              <img src="img/gallery-modal-5.png" alt="" class="modal__img">
-            </picture>
-            <div class="modal__description">
-              <h3 class="modal__title title">
-                Каземир Малевич
-              </h3>
-              <span class="modal__title-name">
-                "Женщина с&nbsp;граблями"
-              </span>
-              <span class="modal__title-years">
-                1931-1932
-              </span>
-              <p class="modal__descr descr">
-                Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича.
-            Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был
-            утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
-              </p>
-              <svg class='modal-close' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
-              </svg>
+            <div class="modal modal--2" data-target="pop-2">
+              <picture>
+                <img src="img/gallery-modal-2.png" alt="" class="modal__img">
+              </picture>
+              <div class="modal__description">
+                <h3 class="modal__title title">
+                  Каземир Малевич
+                </h3>
+                <span class="modal__title-name">
+                  "Женщина с&nbsp;граблями"
+                </span>
+                <span class="modal__title-years">
+                  1931-1932
+                </span>
+                <p class="modal__descr descr">
+                  Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича.
+              Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был
+              утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
+                </p>
+                <svg class='modal-close' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
+                </svg>
+              </div>
+            </div> 
+            <div class="modal modal--3" data-target="pop-3">
+              <picture>
+                <img src="img/gallery-modal-3.png" alt="" class="modal__img">
+              </picture>
+              <div class="modal__description">
+                <h3 class="modal__title title">
+                  Каземир Малевич
+                </h3>
+                <span class="modal__title-name">
+                  "Женщина с&nbsp;граблями"
+                </span>
+                <span class="modal__title-years">
+                  1931-1932
+                </span>
+                <p class="modal__descr descr">
+                  Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича.
+              Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был
+              утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
+                </p>
+                <svg class='modal-close' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
+                </svg>
+              </div>
             </div>  
-          </div>  
-          <div class="modal modal--6" data-target="pop-6">
-            <picture>
-              <img src="img/gallery-modal-6.png" alt="" class="modal__img">
-            </picture>
-            <div class="modal__description">
-              <h3 class="modal__title title">
-                Каземир Малевич
-              </h3>
-              <span class="modal__title-name">
-                "Женщина с&nbsp;граблями"
-              </span>
-              <span class="modal__title-years">
-                1931-1932
-              </span>
-              <p class="modal__descr descr">
-                Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича.
-            Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был
-            утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
-              </p>
-              <svg class='modal-close' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
-              </svg>
+            <div class="modal modal--4" data-target="pop-4">
+              <picture>
+                <img src="img/gallery-modal-4.png" alt="" class="modal__img">
+              </picture>
+              <div class="modal__description">
+                <h3 class="modal__title title">
+                  Каземир Малевич
+                </h3>
+                <span class="modal__title-name">
+                  "Женщина с&nbsp;граблями"
+                </span>
+                <span class="modal__title-years">
+                  1931-1932
+                </span>
+                <p class="modal__descr descr">
+                  Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича.
+              Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был
+              утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
+                </p>
+                <svg class='modal-close' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
+                </svg>
+              </div>
             </div>
-          </div>
-      </div>            
-    </div>
+            <div class="modal modal--5" data-target="pop-5">
+              <picture>
+                <img src="img/gallery-modal-5.png" alt="" class="modal__img">
+              </picture>
+              <div class="modal__description">
+                <h3 class="modal__title title">
+                  Каземир Малевич
+                </h3>
+                <span class="modal__title-name">
+                  "Женщина с&nbsp;граблями"
+                </span>
+                <span class="modal__title-years">
+                  1931-1932
+                </span>
+                <p class="modal__descr descr">
+                  Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича.
+              Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был
+              утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
+                </p>
+                <svg class='modal-close' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
+                </svg>
+              </div>  
+            </div>  
+            <div class="modal modal--6" data-target="pop-6">
+              <picture>
+                <img src="img/gallery-modal-6.png" alt="" class="modal__img">
+              </picture>
+              <div class="modal__description">
+                <h3 class="modal__title title">
+                  Каземир Малевич
+                </h3>
+                <span class="modal__title-name">
+                  "Женщина с&nbsp;граблями"
+                </span>
+                <span class="modal__title-years">
+                  1931-1932
+                </span>
+                <p class="modal__descr descr">
+                  Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича.
+              Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был
+              утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
+                </p>
+                <svg class='modal-close' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z" fill="black"/>
+                </svg>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>  
   </section>
   <section class="catalogue" id="catalogue">
     <div class="container catalogue__container">
@@ -818,6 +819,7 @@
                     <span class="events__card-name">
                       ММАМ
                     </span>
+                    <span class="events__card-date">
                       с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая
                     </span>
                     <h4 class="events__card-title title">
@@ -869,7 +871,7 @@
 
       </div> 
       
-      </div>
+    </div>
   </section>
   <section class="projects" id="projects">
     <div class="container projects__container">
@@ -931,7 +933,7 @@
         </address>
       </div>
       <div class="location__center">
-        <form action="" class="location__form flex" id="form" method="POST" enctype="multipart/form-data" aria-label="форма обратной связи">
+        <form class="location__form flex" id="form" method="POST" enctype="multipart/form-data" aria-label="форма обратной связи">
           <label class="location__form-info">
             <input type="text" 
               class="location__form-input input-name"
@@ -959,19 +961,23 @@
             Связаться в один клик
           </h4>
           <ul class="location__right-list flex">
-            <li class="location__right-item" tabindex="0" aria-label='написать нам в вотцап'>
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <li class="location__right-item">
+              <a href="#" class="location__right-link" aria-label='написать нам в вотцап'>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z" fill="#30BF39"/>
                 <path d="M25.8749 21.751C25.6249 21.626 24.3124 20.876 24.0624 20.8135C23.8124 20.6885 23.6249 20.6885 23.4374 20.9385C23.2499 21.1885 22.6874 21.8135 22.5624 21.9385C22.3749 22.126 22.2499 22.126 21.9999 22.001C21.7499 21.876 20.8749 21.5635 19.8749 20.5635C19.1249 19.8135 18.5624 18.9385 18.4374 18.626C18.3124 18.376 18.4374 18.1885 18.5624 18.0635C18.6874 17.9385 18.8124 17.751 18.9999 17.626C19.1874 17.501 19.1874 17.376 19.3124 17.1885C19.4374 17.001 19.3749 16.876 19.3124 16.6885C19.2499 16.501 18.7499 15.1885 18.5624 14.626C18.3749 14.0635 18.1249 14.1885 17.9999 14.126C17.8124 14.126 17.6874 14.0635 17.4999 14.0635C17.2499 14.0635 16.9374 14.1885 16.7499 14.376C16.4999 14.626 15.7499 15.251 15.7499 16.5635C15.7499 17.876 16.6249 19.251 16.7499 19.376C16.8749 19.5635 18.4999 22.4385 21.1874 23.626C23.8749 24.8135 23.8749 24.4385 24.3749 24.4385C24.8749 24.4385 25.9999 23.8135 26.2499 23.251C26.4999 22.626 26.4999 22.0635 26.4374 22.001C26.3124 22.001 26.1249 21.9385 25.8749 21.751ZM20.8749 28.1885C19.1249 28.1885 17.4999 27.6885 16.0624 26.751L12.6874 27.8135L13.8124 24.5635C12.7499 23.0635 12.1249 21.251 12.1249 19.376C12.1249 14.501 16.0624 10.5635 20.9374 10.5635C25.8124 10.5635 29.6874 14.501 29.6874 19.376C29.6874 24.251 25.7499 28.1885 20.8749 28.1885ZM20.8749 8.81348C15.0624 8.81348 10.3124 13.5635 10.3124 19.376C10.3124 21.3135 10.8124 23.1885 11.8124 24.8135L9.87489 30.501L15.7499 28.626C17.3124 29.501 19.0624 29.9385 20.8749 29.9385C26.6874 29.9385 31.4374 25.1885 31.4374 19.376C31.4374 13.5635 26.7499 8.81348 20.8749 8.81348Z" fill="white"/>
               </svg>
+              </a>
             </li>
-            <li class="location__right-item" tabindex="0" aria-label='написать нам в твиттер'>
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <li class="location__right-item">
+              <a href="#" class="location__right-link" aria-label='написать нам в твиттер'>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" fill="url(#paint0_linear_136320_63)"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.05312 19.7889L20.7167 14.7649C26.271 12.4547 27.425 12.0534 28.1773 12.0402C28.3428 12.0373 28.7127 12.0783 28.9523 12.2727C29.1547 12.4369 29.2103 12.6587 29.237 12.8143C29.2636 12.9699 29.2968 13.3246 29.2704 13.6017C28.9694 16.7641 27.667 24.4386 27.0045 27.9806C26.7241 29.4794 26.1725 29.9819 25.6377 30.0311C24.4762 30.138 23.5943 29.2635 22.4694 28.5261L18.006 25.528C16.0314 24.2268 17.3114 23.5116 18.4368 22.3428C18.7313 22.0368 23.8486 17.3823 23.9476 16.96C23.9596 16.9072 23.9715 16.7104 23.8546 16.6064C23.7376 16.5024 23.565 16.5384 23.4404 16.5663C23.2639 16.6064 20.4519 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8354 22.9435C12.1213 22.9281 10.7477 22.5397 9.72652 22.2078C8.474 21.8007 7.47852 21.5854 7.56524 20.8939C7.61036 20.5338 8.10632 20.1655 9.05308 19.789L9.05312 19.7889Z" fill="white"/>
                 <defs><linearGradient id="paint0_linear_136320_63" x1="20" y1="0" x2="20" y2="39.7033" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#2AABEE"/><stop offset="1" stop-color="#229ED9"/></linearGradient></defs>
+                <stop offset="1" stop-color="#2AABEE"/><stop offset="1" stop-color="#229ED9"/></linearGradient></defs>
               </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -979,17 +985,15 @@
     </div>
   </section>
   <section class="map" id="map">
+    <h2 class="visually-hidden">Мы на карте</h2>
     <div class="container"></div>
   </section>
-
   </main>
   <footer class="footer">
     <div class="container footer__container">
-      <picture class="footer__logo">
-        <a href="#">
-          <img src="img/main_logo.svg" alt="">
-        </a>
-      </picture>
+      <a class="footer__logo" aria-label='Логотип Бланчард' tabindex="0">
+        <img src="img/main_logo.svg" alt="">
+      </a>
       <ul class="footer__list flex">
         <li class="footer__item">
           <a href="#" class="footer__item-link" aria-label="мы вконтакте">
@@ -1017,17 +1021,17 @@
       </ul> 
     </div>
   </footer>
-  <script src="libs/swiper-bundle.min.js"defer></script>
-  <script src="libs/choices.min.js"defer></script>
-  <script src="libs/simplebar.min.js"defer></script>
-  <script src="libs/jquery.js"defer></script>
-  <script src="libs/jquery-ui.js"defer></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"defer></script>
-  <script src="js/map.js"defer></script>
-  <script src="libs/inputmask.min.js"defer></script>
-  <script src="libs/just-validate.min.js"defer></script>
+  <script src="libs/swiper-bundle.min.js" defer></script>
+  <script src="libs/choices.min.js" defer></script>
+  <script src="libs/simplebar.min.js" defer></script>
+  <script src="libs/jquery.js" defer></script>
+  <script src="libs/jquery-ui.js" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer></script>
+  <script src="js/map.js" defer></script>
+  <script src="libs/inputmask.min.js" defer></script>
+  <script src="libs/just-validate.min.js" defer></script>
   <script src="libs/poper.js" defer></script>
-  <script src="libs/tippy.js"defer></script>
-  <script src="js/script.js"defer></script>
+  <script src="libs/tippy.js" defer></script>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
