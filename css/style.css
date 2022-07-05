@@ -670,10 +670,6 @@ body {
 
 /*about*/
 
-#about {
-	scroll-behavior: smooth;
-}
-
 .about {
 	padding-top: 80px;
 	padding-bottom: 70px;
@@ -696,10 +692,6 @@ body {
 }
 
 /*gallery*/
-
-#gallery {
-	scroll-behavior: smooth;
-}
 
 .gallery {
 	background: url(../img/gallery_1920.jpg);
@@ -1252,10 +1244,6 @@ body {
 
 /*catalogue*/
 
-#catalogue {
-	scroll-behavior: smooth;
-}
-
 .catalogue {
 	padding-top: 80px;
 	padding-bottom: 80px;
@@ -1656,10 +1644,6 @@ body {
 
 /*events*/
 
-#events {
-	scroll-behavior: smooth;
-}
-
 .events {
 	min-height: 781px;
 	margin-bottom: 80px;
@@ -1906,10 +1890,6 @@ body {
 
 /*projects*/ 
 
-#projects {
-	scroll-behavior: smooth;
-}
-
 .projects {
 	margin-bottom: 80px;
 }
@@ -1947,15 +1927,35 @@ body {
 	display: inline;
 }
 
-.tooltip-container {
-  position: relative;
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
+.tippy-box[data-theme='tooltip-theme'] {
+	background-color: #9D5CD0;
+  color: #fff;
 }
-.tooltip {
 
+.tippy-box[data-theme~='tooltip-theme'] {
+  padding: 5px 5px;
+  border-radius: 0;
+  background-color: #9D5CD0;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.tippy-box[data-placement^=top]>.tippy-arrow:before {
+  border-top-color: #9D5CD0;
+}
+
+.tippy-box[data-placement^=bottom]>.tippy-arrow:before {
+  border-bottom-color: #9D5CD0;
+}
+
+.tippy-content {
+  max-width: 264px;
+}
+
+.tooltip {
   width: 16px;
   height: 16px;
   border: 1px solid #9D5CD0;
@@ -1979,7 +1979,7 @@ body {
 .tooltip:focus{
   background: #D1A9F0;;
 }
-.tooltip-container:focus-visible:not(:active),
+
 .tooltip:focus-visible:not(:active),
 .tooltip:focus-visible:not(:active)::before,
 .tooltip:focus-visible:not(:active)::after {
@@ -1989,62 +1989,6 @@ body {
 .tooltip:active{
   background: #9D5CD0;
   color: #fff;
-}
-
-.tooltip-2:before {
-  content: "";
-  position: absolute;
-  -webkit-transform: translate(calc(-100%/2 + 10px), calc(-100% - 10px));
-      -ms-transform: translate(calc(-100%/2 + 10px), calc(-100% - 10px));
-          transform: translate(calc(-100%/2 + 10px), calc(-100% - 10px));
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  max-width: 264px;
-  max-height: 65px;
-  background-color: #9D5CD0;
-  color: #fff;
-  text-align: center;
-  font-weight: 600;
-	font-size: 12px;
-	line-height: 16px;
-  padding: 8px 15px 8px 11px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: none;
-  word-wrap: break-word;
-}
-
-.tooltip-text-1:before {
-	content: 'Пример современных тенденций - современная методология разработки ';
-}
-
-.tooltip-text-2:before {
-	content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции';
-}
-
-.tooltip-text-3:before {
-	content: 'В стремлении повысить качество';
-}
-
-.tooltip-2:after {
-  content: "";
-  position: absolute;
-  top: -60%;
-  left: 50%;
-  -webkit-transform: translateX(-60%);
-      -ms-transform: translateX(-60%);
-          transform: translateX(-60%);
-  border: 10px solid transparent; 
-  border-top: 10px solid #9D5CD0; 
-  display: none;
-}
-
-.tooltip-2:hover:before,
-.tooltip-2:hover:after,
-.tooltip-2:focus:before,
-.tooltip-2:focus:after {
-  display: inline-block;
 }
 
 .projects__link 	{
@@ -2251,10 +2195,6 @@ body {
 }
 
 /*location*/
-
-#location {
-	scroll-behavior: smooth;
-}
 
 .location {
 	height: 155px;
