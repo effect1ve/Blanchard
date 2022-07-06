@@ -111,7 +111,7 @@ body {
 }
 
 .header__logo {
-	margin-right: 171px;
+	margin-right: 10.7%;
 	position: relative;
 	cursor: pointer;
 	transform: translate(-2px, 2px);
@@ -351,6 +351,9 @@ body {
   display: flex;
   padding: 0;
   margin:  0;
+  justify-content: space-between;
+  margin-right: 40px;
+  width: 64.4%;
 }
 .menu__item {
   position: relative;
@@ -360,13 +363,13 @@ body {
 }
 
 .menu__item:first-child {
-	margin-right: 88px;
-	transform: translateX(-3px);
+	/*margin-right: 88px;
+*/	transform: translateX(-3px);
 }
-
+/*
 .menu__item:not(:first-child):not(:last-child){
 	margin-right: 94px;
-}
+}*/
 
 
 .menu__btn {
@@ -438,83 +441,83 @@ body {
 }
 
 .dropdown-link-real-1 {
-	background: url('../img/neck-realism-1920-1.png');
+	background: url('../img/neck-realism-1920-1.jpg');
 }
 
 .dropdown-link-real-2 {
-	background: url('../img/neck-realism-1920-2.png');
+	background: url('../img/neck-realism-1920-2.jpg');
 }
 
 .dropdown-link-real-3 {
-	background: url('../img/neck-realism-1920-3.png');
+	background: url('../img/neck-realism-1920-3.jpg');
 }
 
 .dropdown-link-real-4 {
-	background: url('../img/neck-realism-1920-4.png');
+	background: url('../img/neck-realism-1920-4.jpg');
 }
 
 .dropdown-link-impr-1 {
-	background: url('../img/neck-impress-1920-1.png');
+	background: url('../img/neck-impress-1920-1.jpg');
 }
 
 .dropdown-link-impr-2 {
-	background: url('../img/neck-impress-1920-2.png');
+	background: url('../img/neck-impress-1920-2.jpg');
 }
 
 .dropdown-link-impr-3 {
-	background: url('../img/neck-impress-1920-3.png');
+	background: url('../img/neck-impress-1920-3.jpg');
 }
 
 .dropdown-link-impr-4 {
-	background: url('../img/neck-impress-1920-4.png');
+	background: url('../img/neck-impress-1920-4.jpg');
 }
 
 .dropdown-link-postimpr-1 {
-	background: url('../img/neck-postimpress-1920-1.png');
+	background: url('../img/neck-postimpress-1920-1.jpg');
 }
 
 .dropdown-link-postimpr-2 {
-	background: url('../img/neck-postimpress-1920-2.png');
+	background: url('../img/neck-postimpress-1920-2.jpg');
 }
 
 .dropdown-link-postimpr-3 {
-	background: url('../img/neck-postimpress-1920-3.png');
+	background: url('../img/neck-postimpress-1920-3.jpg');
 }
 
 .dropdown-link-postimpr-4 {
-	background: url('../img/neck-postimpress-1920-4.png');
+	background: url('../img/neck-postimpress-1920-4.jpg');
 }
 
 .dropdown-link-avang-1 {
-	background: url('../img/neck-avangard-1920-1.png');
+	background: url('../img/neck-avangard-1920-1.jpg');
 }
 
 .dropdown-link-avang-2 {
-	background: url('../img/neck-avangard-1920-2.png');
+	background: url('../img/neck-avangard-1920-2.jpg');
 }
 
 .dropdown-link-avang-3 {
-	background: url('../img/neck-avangard-1920-3.png');
+	background: url('../img/neck-avangard-1920-3.jpg');
 }
 
 .dropdown-link-avang-4 {
-	background: url('../img/neck-avangard-1920-4.png');
+	background: url('../img/neck-avangard-1920-4.jpg');
 }
 
 .dropdown-link-futur-1 {
-	background: url('../img/neck-futurism-1920-1.png');
+	background: url('../img/neck-futurism-1920-1.jpg');
 }
 
 .dropdown-link-futur-2 {
-	background: url('../img/neck-futurism-1920-2.png');
+	background: url('../img/neck-futurism-1920-2.jpg');
 }
 
 .dropdown-link-futur-3 {
-	background: url('../img/neck-futurism-1920-3.png');
+	background: url('../img/neck-futurism-1920-3.jpg');
 }
 
 .dropdown-link-futur-4 {
-	background: url('../img/neck-futurism-1920-4.png');
+	background: url('../img/neck-futurism-1920-4.jpg');
 }
 
 .hero__choices-list {
@@ -544,6 +547,7 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 
 .search-input::-webkit-input-placeholder {
 	color: rgba(255,255, 255, .85);
+	transform: translateX(-2px);
 }
 
 .search-input:focus::-webkit-input-placeholder {
@@ -566,9 +570,9 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 .search-icon {
 	position: absolute;
 	top: 28px;
-	-webkit-transform: translateX(-37px);
-	    -ms-transform: translateX(-37px);
-	        transform: translateX(-37px);
+	-webkit-transform: translateX(-30px);
+	    -ms-transform: translateX(-30px);
+	        transform: translateX(-30px);
 }
 
 .header__neck-container {
@@ -994,7 +998,7 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 	border-color: transparent;
   height: 15px;
   width: 18px;
-  top: 12px;
+  top: 16px;
   right: 14px;	
   transition: all .3s ease;
 }
@@ -1096,11 +1100,11 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 .gallery__btn::before {
 	content: '';
 	position: absolute;
-	width: 300px;
-	height: 300px;
+	width: 85%;
+	height: 85%;
 	background: rgba(0, 0, 0, 0.5);
-	top: 25px;
-	left: 25px;
+	top: 8%;
+	left: 8%;
 	cursor: pointer;
 	z-index: 2;
 	visibility: hidden;
@@ -1113,7 +1117,7 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 	width: 81px;
 	height: 79px;
   z-index: 2;
-  left: 37%;
+  left: 35%;
   top: 37%;
   visibility: hidden;
   }	
@@ -1274,9 +1278,7 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 .accordion__content-list {
 	margin: 0;
 	padding: 0;
-	margin-right: 70px;
 	column-count: 3;
-	column-width: 232px;
 	margin-bottom: 31px;
 }
 
@@ -1691,7 +1693,6 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 }
 
 .events__card-img {
-	min-height: 300px;
 	margin-bottom: 8px;
 }
 
@@ -1810,8 +1811,8 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 .events__swiper-next {
 	position: absolute;
 	left: auto;
-	right: -.5%;
-	top: 55%;
+	right: -1.5%;
+	top: 50%;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -1833,7 +1834,7 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 .events__swiper-prev {
 	position: absolute;
 	left: auto;
-	top: 55%;
+	top: 50%;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -2207,7 +2208,7 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 /*location*/
 
 .location {
-	height: 155px;
+	min-height: 155px;
 	border-top: 1px solid #999999;
 	border-bottom: 1px solid #999999;
 	padding-top: 50px;

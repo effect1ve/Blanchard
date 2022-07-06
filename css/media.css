@@ -1,4 +1,10 @@
-@media (max-width: 1700px) {
+@media (max-width: 1600px) {
+
+	.accordion__content-list {
+		margin: 0;
+		column-count: 2;
+	}
+
 	.events__swiper-prev,
 	.events__swiper-next {
 		display: none;
@@ -7,4 +13,30 @@
 	.events__swiper-pagination.swiper-pagination {
 		display:  block;
 	}
+
+	.location__container {
+		flex-direction: column;
+	}
+
+	.location__left {
+		margin-bottom: 21px;
+	}
+
+	.location__center {
+		margin-bottom: 45px
+	}
+
+	.about__descr {
+		max-width: none;
+	}
+
+	.catalogue__descr {
+		max-width: none;
+	}
+
+	.projects__descr {
+		max-width: none;
+	}
+
 }
+

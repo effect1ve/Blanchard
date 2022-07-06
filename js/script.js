@@ -105,7 +105,25 @@ document.addEventListener('DOMContentLoaded', function() {
       nextEl: ".gallery__next",
       prevEl: ".gallery__prev",
     },
+    breakpoints: {
+      600: {
+      slidesPerView: 2,
+      spaceBetween: 38,
+      slidesPerGroup: 2,
+      },
+      1010: {
+        slidesPerView: 2,
+        spaceBetween: 33,
+        slidesPerGroup: 2,
+      },
+      1600: {
+        slidesPerView: 3,
+        spaceBetween: 44,
+        slidesPerGroup: 3,
+      },
+    }  
   })
+
 
   const gallerySelector = document.querySelector("#gallery__choices")  
 
@@ -205,9 +223,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // events-swiper
 
   const swiperEvents = new Swiper(".swiper-events", {
-    slidesPerView: 'auto',
-    slidesPerView: 3,
-    spaceBetween: 50,
+    slidesPerView: 1,
+    spaceBetween: 25,
     loop: false,
     navigation: {
       prevEl: '.events__swiper-prev',
@@ -217,19 +234,24 @@ document.addEventListener('DOMContentLoaded', function() {
       el: '.events__swiper-pagination',
       clickable: true,
     },
-    breakpoints: {
+     breakpoints: {
     500: {
       slidesPerView: 2,
       spaceBetween: 34,
       slidesPerGroup: 2,
     },
-
     962: {
       slidesPerView: 3,
       spaceBetween: 27,
       slidesPerGroup: 3,
     },
-  },
+
+    1400: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      slidesPerGroup: 3,
+      }
+    },
   })
 
 // tooltips
@@ -245,13 +267,30 @@ document.addEventListener('DOMContentLoaded', function() {
 // projects-swiper
 
   const swiperProjects = new Swiper('.swiper-projects', {
-    // slidesPerView: 'auto',
-    slidesPerView: 3,
-    spaceBetween: 50,
+    slidesPerView: 1,
+    spaceBetween: 30,
     loop: false,
     navigation: {
       nextEl: ".projects__btn-next",
       prevEl: ".projects__btn-prev",
+    },
+    breakpoints: {
+    650: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+      slidesPerGroup: 2,
+    },
+
+    1000: {
+      slidesPerView: 2,
+      spaceBetween: 47,
+      slidesPerGroup: 2,
+    },
+    1400: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      slidesPerGroup: 3,
+      }
     },
   })
 
