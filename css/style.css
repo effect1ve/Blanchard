@@ -80,6 +80,10 @@ body {
 	display: none;
 }
 
+.none_transform {
+	transform: none;
+}
+
 .title {
 	margin: 0;
 }
@@ -111,7 +115,7 @@ body {
 }
 
 .header__logo {
-	margin-right: 10.7%;
+	margin-right: auto;
 	position: relative;
 	cursor: pointer;
 	transform: translate(-2px, 2px);
@@ -141,6 +145,18 @@ body {
 .header__logo:hover:after {
   width: 100%;
   left: 0;
+}
+
+.burger {
+	display: none;
+}
+
+.header__search {
+	display: none;
+}
+
+.header__row {
+	width: 78.5%;
 }
 
 .header__list {
@@ -261,10 +277,24 @@ body {
 	width: 100%;
 }
 
-.hero__img {
-	position: absolute;
-	min-height: 100%;
+.hero-slide {
+	background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+.hero-slide-1 {
+	background-image: url('../img/hero_1920-1.jpg');
+}
+
+.hero-slide-2 {
+	background-image: url('../img/hero_1920-2.jpg');
+}
+
+.hero-slide-3 {
+	background-image: url('../img/hero_1920-3.jpg');
+}
+
 
 .dropdown {
   background: rgba(0, 0, 0, 0.6);
@@ -1601,6 +1631,10 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 	color: #333;
 }
 
+.active {
+	display: block;
+}
+
 .catalogue__people-descr-empty {
 	font-weight: 400;
 	font-size: 16px;
@@ -1632,10 +1666,6 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 
 .empty-people {
 	display: none;
-}
-
-.active {
-	display: block;
 }
 
 .accordion__content-tab:hover {
