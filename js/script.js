@@ -25,6 +25,24 @@ document.addEventListener('DOMContentLoaded', function() {
     searchInp.value = '';
   })
 
+// burger
+
+  const burger = document.querySelector('.burger');
+  const burgerClose = document.querySelector('.burger-close');
+  const burgerMenu = document.querySelector('.header__row');
+
+  burger.addEventListener('click', function() {
+    burger.classList.add('hide');
+    burgerClose.classList.toggle('active');
+    burgerMenu.classList.add('active');
+  })
+
+  burgerClose.addEventListener('click', function() {
+    burger.classList.remove('hide');
+    burgerClose.classList.toggle('active');
+    burgerMenu.classList.remove('active');
+  })
+
 //swiper-hero
 
   const swiperHero = new Swiper('.swiper-hero', {

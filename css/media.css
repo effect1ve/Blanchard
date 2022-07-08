@@ -59,10 +59,11 @@
 		height: 100vh;
 		background: rgb(0,0,0, .9);
 		z-index: 1;
-		padding-top: 96px;
+		padding-top: 77px;
 		padding-left: 48px;
 		padding-bottom: 51px;
-	/*	transform: translateY(-101%);*/
+		/*transform: translateY(-101%);*/
+		display: none;
 	}
 
 	.header__list {
@@ -101,6 +102,13 @@
 		display: block;
 	}
 
+	.hide {
+		display: none;
+	}
+
+	.active {
+		display: block;
+	}
 
 
 }
