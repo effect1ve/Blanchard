@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.js-scroll-link').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
-
+        document.body.style.overflow = '';
         const href = this.getAttribute('href').substring(1);
         const scrollTarget = document.getElementById(href);
         const elementPosition = scrollTarget.getBoundingClientRect().top;
@@ -35,12 +35,24 @@ document.addEventListener('DOMContentLoaded', function() {
     burger.classList.add('hide');
     burgerClose.classList.toggle('active');
     burgerMenu.classList.add('active');
+    document.body.style.overflow = 'hidden';
   })
 
   burgerClose.addEventListener('click', function() {
     burger.classList.remove('hide');
     burgerClose.classList.toggle('active');
     burgerMenu.classList.remove('active');
+    document.body.style.overflow = '';
+  })
+
+  const navItem = document.querySelectorAll('.header__link');
+  navItem.forEach(elem => {
+    elem.addEventListener('click', function() {
+      burger.classList.remove('hide');
+      burgerClose.classList.toggle('active');
+      burgerMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    })
   })
 
 //swiper-hero
