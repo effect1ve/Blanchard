@@ -242,6 +242,11 @@ body {
   transition-duration: .3s;
 }
 
+.header__wrapper {
+	justify-content: space-between;
+	width: 100%;
+}
+
 .enter-icon {
   margin-left: -4px;
   margin-right: 6px;

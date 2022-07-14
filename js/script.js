@@ -34,14 +34,14 @@ document.addEventListener('DOMContentLoaded', function() {
   burger.addEventListener('click', function() {
     burger.classList.add('hide');
     burgerClose.classList.toggle('active');
-    burgerMenu.classList.add('active');
+    burgerMenu.classList.add('flex');
     document.body.style.overflow = 'hidden';
   })
 
   burgerClose.addEventListener('click', function() {
     burger.classList.remove('hide');
     burgerClose.classList.toggle('active');
-    burgerMenu.classList.remove('active');
+    burgerMenu.classList.remove('flex');
     document.body.style.overflow = '';
   })
 
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.addEventListener('click', function() {
       burger.classList.remove('hide');
       burgerClose.classList.toggle('active');
-      burgerMenu.classList.remove('active');
+      burgerMenu.classList.remove('flex');
       document.body.style.overflow = '';
     })
   })

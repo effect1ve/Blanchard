@@ -59,9 +59,7 @@
 		height: 100vh;
 		background: rgb(0,0,0, .9);
 		z-index: 1;
-		padding-top: 77px;
-		padding-left: 48px;
-		padding-bottom: 51px;
+		padding: 77px 50px 51px 48px;
 		/*transform: translateY(-101%);*/
 		display: none;
 	}
@@ -86,8 +84,8 @@
 		border-radius: 100px;
 		width: 257px;
 		height: 60px;
-		padding-left: 7.5%;
-		padding-top: 1.2%;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.burger {
@@ -108,6 +106,16 @@
 
 	.active {
 		display: block;
+	}
+
+	.header__wrapper {
+		overflow-y: auto;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.flex {
+		display: flex;
 	}
 
 
