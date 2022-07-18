@@ -55,6 +55,23 @@ document.addEventListener('DOMContentLoaded', function() {
     })
   })
 
+  const tabletForm = document.querySelector('#header__search-form');
+  const tabletFormClose = document.querySelector('.form-close');
+  const tabletFormBtn = document.querySelector('.tablet-form-btn');
+  const tabletInput = document.querySelector('.tablet-form-input');
+
+  tabletFormBtn.addEventListener('click', function() {
+    tabletForm.style.transform = 'translateX(-24vw)';
+    tabletInput.style.display = 'inline-block';
+    setTimeout(() => tabletFormClose.classList.add('active'), 250);
+  });
+
+  tabletFormClose.addEventListener('click', function() {
+    tabletForm.style.transform = 'translateX(0)';
+    tabletFormClose.classList.remove('active');
+    setTimeout(() => tabletInput.style.display = 'none', 300);
+  });
+
 //swiper-hero
 
   const swiperHero = new Swiper('.swiper-hero', {

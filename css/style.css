@@ -98,6 +98,7 @@ body {
 	background: #000;
 	position: relative;
 	z-index: 100;
+	overflow: hidden;
 }
 
 .header__container {
