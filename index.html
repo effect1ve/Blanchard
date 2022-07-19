@@ -31,8 +31,10 @@
         </svg>
       </div>  
       <a class="header__logo" aria-label='Логотип Бланчард' tabindex="0">
-        <source>
-        <img src="img/main_logo.png" alt="Blanchard" class="header__logo-img">
+        <picture>
+          <source media= "(max-width:1200px)" srcset = 'img/logo-1024.png'>
+          <img src="img/main_logo.png" alt="Blanchard" class="header__logo-img">
+        </picture>  
       </a>
       <div class="header__search">
         <form action="" id="header__search-form" class="header__search-form">
@@ -323,6 +325,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-1">
                 <picture>
+                  <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-1.jpg'>
                   <img src="img/gallery_item-1_1920.jpg" alt="">
                 </picture>
               </button>
@@ -330,6 +333,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-2">
                 <picture>
+                  <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-2.jpg'>
                   <img src="img/gallery_item-2_1920.jpg" alt="">
                 </picture>
               </button>
@@ -337,6 +341,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-3">
                 <picture>
+                  <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-3.jpg'>
                   <img src="img/gallery_item-3_1920.jpg" alt="">
                 </picture>
               </button>
@@ -344,6 +349,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-4">
                 <picture>
+                  <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-4.jpg'>
                   <img src="img/gallery_item-4_1920.jpg" alt="">
                 </picture>
               </button>
@@ -351,6 +357,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-5">
                 <picture>
+                  <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-5.jpg'>
                   <img src="img/gallery_item-5_1920.jpg" alt="">
                 </picture>
               </button>
@@ -358,6 +365,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-6">
                 <picture>
+                  <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-6.jpg'>
                   <img src="img/gallery_item-6_1920.jpg" alt="">
                 </picture>
               </button>
@@ -770,12 +778,14 @@
                 </picture>
                 <div class="events__card-pad">
                   <div class="events__card-info">
-                    <span class="events__card-name">
-                      Музей им. Щусева
-                    </span>
-                    <span class="events__card-date">
-                      с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля
-                    </span>
+                    <div class="events__card-wrapper">
+                      <span class="events__card-name">
+                        Музей им. Щусева
+                      </span>
+                      <span class="events__card-date">
+                        с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля
+                      </span>
+                    </div>
                     <h4 class="events__card-title ev_crd-pad title">
                       Книжная гравюра в живом восприятии
                     </h4>
@@ -799,12 +809,14 @@
                 </picture>
                 <div class="events__card-pad">
                   <div class="events__card-info">
-                    <span class="events__card-name">
-                      ММОМА
-                    </span>
-                    <span class="events__card-date">
-                      24&nbsp;марта 19:00
-                    </span>
+                    <div class="events__card-wrapper">
+                      <span class="events__card-name">
+                        ММОМА
+                      </span>
+                      <span class="events__card-date">
+                        24&nbsp;марта 19:00
+                      </span>
+                    </div>  
                     <h4 class="events__card-title title">
                       &laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей
                       Ильин.
@@ -826,12 +838,14 @@
                 </picture>
                 <div class="events__card-pad">
                   <div class="events__card-info">
-                    <span class="events__card-name">
-                      Еврейский музей
-                    </span>
-                    <span class="events__card-date">
-                      с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля
-                    </span>
+                    <div class="events__card-wrapper">
+                      <span class="events__card-name">
+                        Еврейский музей
+                      </span>
+                      <span class="events__card-date">
+                        с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля
+                      </span>
+                    </div>  
                     <h4 class="events__card-title title">
                       Выставка «Формация 2020»
                     </h4>
@@ -855,12 +869,14 @@
                 </picture>
                 <div class="events__card-pad">
                   <div class="events__card-info">
-                    <span class="events__card-name">
-                      ММАМ
-                    </span>
-                    <span class="events__card-date">
-                      с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая
-                    </span>
+                    <div class="events__card-wrapper">
+                      <span class="events__card-name">
+                        ММАМ
+                      </span>
+                      <span class="events__card-date">
+                        с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая
+                      </span>
+                    </div>
                     <h4 class="events__card-title title">
                       Джон Винзор. Фотографии из серии &laquo;Метафора серебра&raquo;
                     </h4>
@@ -883,12 +899,14 @@
                 </picture>
                 <div class="events__card-pad">
                   <div class="events__card-info">
-                    <span class="events__card-name">
-                      Третьяковка на&nbsp;Крымском валу
-                    </span>
-                    <span class="events__card-date">
-                      с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля
-                    </span>
+                    <div class="events__card-wrapper">  
+                      <span class="events__card-name">
+                        Третьяковка на&nbsp;Крымском валу
+                      </span>
+                      <span class="events__card-date">
+                        с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля
+                      </span>
+                    </div>
                     <h4 class="events__card-title title">
                       XXIV Международная биеннале молодого искусства
                     </h4>

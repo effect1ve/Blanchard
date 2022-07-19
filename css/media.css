@@ -10,6 +10,18 @@
 		display: none;
 	}
 
+	.events__card-info {
+		margin-bottom: 21px
+	}
+
+	.gallery__left {
+		min-width: 31%;
+	}
+
+	.gallery__choices {
+		margin-bottom: 107px
+	}
+
 	.events__swiper-pagination.swiper-pagination {
 		display:  block;
 	}
@@ -44,9 +56,12 @@
 
 	.header__container {
 		justify-content: space-between;
+		padding-top: 30px;
+		padding-bottom: 24px;
 	}
 
 	.header__logo {
+		transform: translate(5px, 0);
 		margin: 0;
 	}
 
@@ -151,6 +166,59 @@
 		transition: all .3s ease;
 	}
 
+	.hero {
+		padding-top: 113px
+	}
+
+	.hero__container {
+		max-width: none;
+	}
+
+	.hero__title {
+		margin-bottom: 10px
+	}
+
+	.hero__descr {
+		max-width: 655px;
+		margin-bottom: 134px
+	}
+
+	.hero__btn {
+		margin-bottom: 114px
+	}
+
+	.choices__inner {
+		padding: 6.5px 7.5px 3.75px;
+	}
+
+	.gallery__btn::after {
+		background: url('../img/increase-1024..svg') no-repeat;
+		width: 60px;
+		height: 60px;
+		left: 37%;
+	}
+
+	.events__card-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.events__card-name,
+	.events__card-date {
+		max-width: none;
+		font-weight: 400;
+	}
+
+	.events__card-pad {
+		padding: 13px 33px;
+    	padding-bottom: 47px;
+	}
+
+	.events__card  {
+		min-height: 0;
+	}
+
 
 	.flex {
 		display: flex;
@@ -165,4 +233,6 @@
 	}
 
 }
+
+
 

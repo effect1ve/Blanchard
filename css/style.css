@@ -1137,7 +1137,6 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 .gallery__btn {
 	max-height: 350px;
 	position: relative;
-/*	transition: all .3s ease;*/
 }
 
 .gallery__btn::before {
@@ -1151,6 +1150,8 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 	cursor: pointer;
 	z-index: 2;
 	visibility: hidden;
+	opacity: 0;
+	transition: all .3s ease;
 }
 
 .gallery__btn::after {
@@ -1163,12 +1164,15 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
   left: 35%;
   top: 37%;
   visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease;
   }	
 
 .gallery__btn:hover::before,
 .gallery__btn:hover::after {
 	visibility: visible;
-	transition-delay: .1s;
+	opacity: 1;
+	transition: all .3s ease;
 } 
 
 .gallery__btn:active picture::after {
