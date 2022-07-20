@@ -2200,10 +2200,11 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 	outline: 1px solid #CACACA;
 	outline-offset: -1px;
 	background-position: center;
-	-webkit-transition: background .3s ease;
-	-o-transition: background .3s ease;
-	transition: background .3s ease;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 	filter: grayscale(100%);
+	opacity: .4;
 }
 
 
@@ -2211,6 +2212,7 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 	background-position: center;
 	background-repeat: no-repeat;
 	filter: grayscale(0);
+	opacity: 1;
 }
 
 .projects__swiper-slide:focus {
