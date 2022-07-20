@@ -832,7 +832,7 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 	height: 12px;
 	border: 1px solid #fff;
 	left: -24px;
-	top: 3px;
+	top: 5px;
 	-webkit-transition: border-color .3s ease;
 	-o-transition: border-color .3s ease;
 	transition: border-color .3s ease;
@@ -850,7 +850,7 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 	border-radius: 50%;
 	background-color: rgba(194, 131, 243, 1);
 	left: -20px;
-	top: 7px;
+	top: 9px;
 	opacity: 0;
 	-webkit-transition: opacity .3s ease;
 	-o-transition: opacity .3s ease;
@@ -1336,6 +1336,7 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 
 .accordion__content-tab {
 	position: relative;
+	font-family: 'Open sans';
 	background: none;
 	border: none;
 	padding: 0;
@@ -1345,6 +1346,10 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 	line-height: 32px;
 	color: #333333;
 	z-index: 1;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family: 'Open sans';
 }
 
 .accordion__content-tab:focus-visible {
@@ -1448,6 +1453,7 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 .ui-accordion .ui-accordion-header {
 	position: relative;
 	border: none;
+	font-family: 'Open Sans';
 	font-size: 24px;
 	line-height: 32px;
 	font-weight: 600;
@@ -1646,10 +1652,6 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 	line-height: 32px;
 	max-width: 749px;
 	color: #333;
-}
-
-.active {
-	display: block;
 }
 
 .catalogue__people-descr-empty {
@@ -2158,73 +2160,38 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 	background: url(../img/partners-1920-1.png);
 }
 
-.projects__swiper-slide-1:hover {
-	background: url(../img/partners-1920-hover-1.png);
-}
-
 .projects__swiper-slide-2 {
 	background: url(../img/partners-1920-2.png);
-}
-
-.projects__swiper-slide-2:hover {
-	background: url(../img/partners-1920-hover-2.png);
 }
 
 .projects__swiper-slide-3 {
 	background: url(../img/partners-1920-3.png);
 }
 
-.projects__swiper-slide-3:hover {
-	background: url(../img/partners-1920-hover-3.png);
-}
-
 .projects__swiper-slide-4 {
 	background: url(../img/partners-1920-4.png);
-}
-
-.projects__swiper-slide-4:hover {
-	background: url(../img/partners-1920-hover-4.png);
 }
 
 .projects__swiper-slide-5 {
 	background: url(../img/partners-1920-5.png);
 }
 
-.projects__swiper-slide-5:hover {
-	background: url(../img/partners-1920-hover-5.png);
-}
-
 .projects__swiper-slide-6 {
 	background: url(../img/partners-1920-6.png);
-}
-
-.projects__swiper-slide-6:hover {
-	background: url(../img/partners-1920-hover-6.png);
 }
 
 .projects__swiper-slide-7 {
 	background: url(../img/partners-1920-7.png);
 }
 
-.projects__swiper-slide-7:hover {
-	background: url(../img/partners-1920-hover-7.png);
-}
-
 .projects__swiper-slide-8 {
 	background: url(../img/partners-1920-8.png);
-}
-
-.projects__swiper-slide-8:hover {
-	background: url(../img/partners-1920-hover-8.png);
 }
 
 .projects__swiper-slide-9 {
 	background: url(../img/partners-1920-9.png);
 }
 
-.projects__swiper-slide-9:hover {
-	background: url(../img/partners-1920-hover-9.png)
-}
 
 .projects__swiper-slide {
 	height: 150px;
@@ -2236,12 +2203,14 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 	-webkit-transition: background .3s ease;
 	-o-transition: background .3s ease;
 	transition: background .3s ease;
+	filter: grayscale(100%);
 }
 
 
 .projects__swiper-slide:hover {
 	background-position: center;
 	background-repeat: no-repeat;
+	filter: grayscale(0);
 }
 
 .projects__swiper-slide:focus {
@@ -2508,6 +2477,10 @@ address .location__address {
 
 .footer__item-link:focus-visible:not(:active) {
 	outline: none;
+}
+
+.active {
+	display: block;
 }
 
 /*map*/
