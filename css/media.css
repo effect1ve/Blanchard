@@ -138,7 +138,7 @@
 		cursor: pointer;
 		display: none;
 		position: absolute;
-		top: 30px;
+		margin-left: 20px;
 		transition: all 4s ease;
 	}
 
@@ -196,8 +196,9 @@
 	}
 
 	.gallery {
-    padding-top: 80px;
-    padding-bottom: 79px;
+		background: url('../img/gallery_1024.jpg');
+    	padding-top: 80px;
+    	padding-bottom: 79px;
 	}
 
 	.gallery__btn::after {
@@ -221,7 +222,12 @@
 	}
 
 	.events {
+		min-height: 0;
 		margin-bottom: 91px
+	}
+
+	.swiper-events {
+		padding-bottom: 30px;
 	}
 
 	.events__card-wrapper {
@@ -246,8 +252,8 @@
 	}
 
 	.events__swiper-pagination.swiper-pagination {
-		bottom: -13px;
-		left: 7px;
+	/*	bottom: -13px;
+*/		left: 7px;
 	}
 
 	.events__card  {
@@ -255,6 +261,7 @@
 	}
 
 	.events__card-img {
+		width: 100%;
 		margin-bottom: 0
 	}
 
@@ -267,7 +274,7 @@
 	}
 
 	.events__card-info {
-		min-height: 367px;
+		min-height: 400px;
 	}
 
 	.projects__swiper-slide {

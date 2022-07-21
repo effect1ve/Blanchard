@@ -1866,9 +1866,6 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 	height: 50px;
 	border-radius: 50%;
 	background: rgba(236, 236, 236, 1);
-/*	-webkit-transform: translateX(-117px);
-	    -ms-transform: translateX(-117px);
-	        transform: translateX(-117px);*/
 	z-index: 11;
 	-webkit-transition: all .3s ease;
 	-o-transition: all .3s ease;
@@ -1926,7 +1923,6 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 .events__swiper-pagination.swiper-pagination {
 	display: none;
 	position: absolute;
-	bottom: -30px;
 }
 
 .swiper-pagination-bullet-active {
@@ -2157,7 +2153,7 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 }
 
 .projects__swiper-slide-1 {
-	background: url(../img/partners-1920-1.png);
+	background: url(../img/partners-1920-1.png);	
 }
 
 .projects__swiper-slide-2 {
