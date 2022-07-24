@@ -33,27 +33,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
   burger.addEventListener('click', function() {
     burger.classList.add('hide');
-    burgerClose.classList.toggle('active');
+    burgerClose.classList.add('active');
     burgerMenu.classList.add('flex');
     document.body.style.overflow = 'hidden';
   })
 
   burgerClose.addEventListener('click', function() {
     burger.classList.remove('hide');
-    burgerClose.classList.toggle('active');
+    burgerClose.classList.remove('active');
     burgerMenu.classList.remove('flex');
     document.body.style.overflow = '';
   })
 
-  const navItem = document.querySelectorAll('.header__link');
-  navItem.forEach(elem => {
-    elem.addEventListener('click', function() {
-      burger.classList.remove('hide');
-      burgerClose.classList.toggle('active');
-      burgerMenu.classList.remove('flex');
-      document.body.style.overflow = '';
+    const navItem = document.querySelectorAll('.header__link');
+      navItem.forEach(elem => {
+      elem.addEventListener('click', function() {
+        burger.classList.remove('hide');
+        burgerClose.classList.remove('active');
+        burgerMenu.classList.remove('flex');
+        document.body.style.overflow = '';
+      })
     })
-  })
+
 
   const tabletForm = document.querySelector('#header__search-form');
   const tabletFormClose = document.querySelector('.form-close');

@@ -1429,9 +1429,12 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 	line-height: 22px;
 	color: #9D5CD0;
 }
-
-.ui-widget-content a {
+.ui-widget-content a { 
 	color: #9D5CD0;
+}
+
+.accordion__content-tab a {
+	color: #333;
 }
 
 .ui-accordion .ui-accordion-content {

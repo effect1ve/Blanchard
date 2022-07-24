@@ -38,7 +38,7 @@
       </a>
       <div class="header__search">
         <form action="" id="header__search-form" class="header__search-form">
-          <button class="btn search-btn tablet-form-btn" id="search-btn">
+          <button class="btn search-btn tablet-form-btn" id="search-btn" type="button">
             <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
@@ -325,6 +325,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-1">
                 <picture>
+                  <source media='(max-width: 962px)' srcset='img/gallery-768-1.jpg'>
                   <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-1.jpg'>
                   <img src="img/gallery_item-1_1920.jpg" alt="">
                 </picture>
@@ -333,6 +334,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-2">
                 <picture>
+                  <source media='(max-width: 962px)' srcset='img/gallery-768-2.jpg'>
                   <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-2.jpg'>
                   <img src="img/gallery_item-2_1920.jpg" alt="">
                 </picture>
@@ -341,6 +343,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-3">
                 <picture>
+                  <source media='(max-width: 962px)' srcset='img/gallery-768-3.jpg'>
                   <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-3.jpg'>
                   <img src="img/gallery_item-3_1920.jpg" alt="">
                 </picture>
@@ -349,6 +352,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-4">
                 <picture>
+                  <source media='(max-width: 962px)' srcset='img/gallery-768-4.jpg'>
                   <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-4.jpg'>
                   <img src="img/gallery_item-4_1920.jpg" alt="">
                 </picture>
@@ -357,6 +361,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-5">
                 <picture>
+                  <source media='(max-width: 962px)' srcset='img/gallery-768-5.jpg'>
                   <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-5.jpg'>
                   <img src="img/gallery_item-5_1920.jpg" alt="">
                 </picture>
@@ -365,6 +370,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-6">
                 <picture>
+                  <source media='(max-width: 962px)' srcset='img/gallery-768-6.jpg'>
                   <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-6.jpg'>
                   <img src="img/gallery_item-6_1920.jpg" alt="">
                 </picture>
@@ -540,6 +546,7 @@
       <div class="catalogue__tabs flex">
         <div class="catalogue__people active" id='tab_1'>
           <picture>
+            <source media='(max-width: 962px)' srcset='img/catalogue-962.jpg'>
             <source media='(max-width: 1200px)' srcset='img/catalogue-1024.jpg'>
             <img src="img/catalogue-1920.jpg" alt="">
           </picture>
@@ -555,6 +562,7 @@
         </div>
         <div class="catalogue__people empty-people" id='tab_empty'>
           <picture>
+            <source media='(max-width: 962px)' srcset='img/catalogue_empty-962.png'>
             <source media='(max-width: 1200px)' srcset='img/catalogue_empty-1024.jpg'>
             <img src="img/catalogue_empty-1920.jpg" alt="">
           </picture>
@@ -564,7 +572,7 @@
           <p class="catalogue__people-descr-empty descr">
             Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
           </p>
-          <a href="" class="catalogue__people-empty-link">
+          <a href="#gallery" class="catalogue__people-empty-link">
             В&nbsp;галерею
           </a>
         </div>
@@ -575,80 +583,80 @@
               <div class="accordion__content">
                 <ul class="accordion__content-list">
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab"  data-tab="#tab_empty">Бенедетто ди Биндо</button>
+                    <button class="accordion__content-tab"  data-tab="#tab_empty"><a href="#tab_empty">Бенедетто ди Биндо</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab"  data-tab="#tab_empty">Бергоньоне, Амброджо</button>
+                    <button class="accordion__content-tab"  data-tab="#tab_empty"><a href="#tab_empty">Бергоньоне, Амброджо</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab"  data-tab="#tab_empty">Биссоло, Франческо</button>
+                    <button class="accordion__content-tab"  data-tab="#tab_empty"><a href="#tab_empty">Биссоло, Франческо</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Больтраффио, Джованни</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Больтраффио, Джованни</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Бонсиньори, Франческо</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Бонсиньори, Франческо</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Боттичини, Рафаэлло</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Боттичини, Рафаэлло</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Брамантино</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Брамантино</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Бреа, Людовико</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Бреа, Людовико</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Бьяджо д'нтоние Туччи</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Бьяджо д'нтоние Туччи</a></button>
                   </li>
              <!--    </ul> -->
                 <!-- <ul class="accordion__content-list"> -->
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Веккьетта</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Веккьетта</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Андреа Верроккьо</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Андреа Верроккьо</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab active" data-tab="#tab_1" aria-label="Доменико Гирландайо">Доменико Гирландайо</button>
+                    <button class="accordion__content-tab active" data-tab="#tab_1" aria-label="Доменико Гирландайо"><a href="#tab_1">Доменико Гирландайо</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Беноццо Гоццоли</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Беноццо Гоццоли</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Граначчи, Франческо</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Граначчи, Франческо</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Грегорио Ди Чекко</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Грегорио Ди Чекко</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Джованни да Удине</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Джованни да Удине</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Джованни ди Паоло</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Джованни ди Паоло</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Джорджоне</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Джорджоне</a></button>
                   </li>
               <!--   </ul> -->
            <!--      <ul class="accordion__content-list"> -->
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Парентино, Бернардо</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Парентино, Бернардо</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Пезеллино</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Пезеллино</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Пьетро Перуджио</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Пьетро Перуджио</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Перуцци, Бальдассаре</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Перуцци, Бальдассаре</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Пизанелло</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Пизанелло</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty">Пинтуриккьо</button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Пинтуриккьо</a></button>
                   </li>
                 </ul>
               </div>
@@ -776,6 +784,7 @@
             <div class="swiper-slide events__slide">
               <div class="events__card flex">
                 <picture>
+                  <source media='(max-width: 962px)' srcset='img/events-768-1.jpg'>
                   <source media='(max-width: 1200px)' srcset='img/events-1024-1.jpg'>
                   <img src="img/events_card-1920-1.jpg" alt="" class="events__card-img">
                 </picture>
@@ -808,6 +817,7 @@
             <div class="swiper-slide events__slide">
               <div class="events__card flex">
                 <picture>
+                  <source media='(max-width: 962px)' srcset='img/events-768-2.jpg'>
                   <source media='(max-width: 1200px)' srcset='img/events-1024-2.jpg'>
                   <img src="img/events_card-1920-2.jpg" alt="" class="events__card-img">
                 </picture>
@@ -838,6 +848,7 @@
             <div class="swiper-slide events__slide">
               <div class="events__card flex">
                 <picture>
+                  <source media='(max-width: 962px)' srcset='img/events-768-3.jpg'>
                   <source media='(max-width: 1200px)' srcset='img/events-1024-3.jpg'>
                   <img src="img/events_card-1920-3.jpg" alt="" class="events__card-img">
                 </picture>
@@ -870,6 +881,7 @@
             <div class="swiper-slide events__slide">
               <div class="events__card flex">
                 <picture>
+                  <source media='(max-width: 962px)' srcset='img/events-768-4.jpg'>
                   <source media='(max-width: 1200px)' srcset='img/events-1024-4.jpg'>
                   <img src="img/events_card-1920-4.jpg" alt="" class="events__card-img">
                 </picture>
@@ -901,6 +913,7 @@
             <div class="swiper-slide events__slide">
               <div class="events__card flex">
                 <picture>
+                  <source media='(max-width: 962px)' srcset='img/events-768-5.jpg'>
                   <source media='(max-width: 1200px)' srcset='img/events-1024-5.jpg'>
                   <img src="img/events_card-1920-5.jpg" alt="" class="events__card-img">
                 </picture>

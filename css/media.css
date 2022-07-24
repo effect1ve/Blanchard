@@ -34,8 +34,10 @@
 		margin-bottom: 23px;
 	}
 
+
 	.location__form-btn {
 		min-width: 343px;
+		margin-top: 12px;
 	}
 
 	.location__center {
@@ -326,6 +328,10 @@
 		background-repeat: no-repeat;
 	}
 
+	.location__form {
+		flex-wrap: wrap;
+	}
+
 	.location__right-links {
 		margin-bottom: 21px;
 	}
@@ -333,7 +339,6 @@
 	.footer {
 		padding: 40px 0;
 	}
-
 
 	.footer__logo {
 		transform: translate(0px, 10px)
@@ -366,5 +371,145 @@
 
 }
 
+@media (max-width: 962px) {
+	
+	.header__container {
+		padding-top: 29px
+	}
 
+	.tablet-form-btn svg {
+		width: 27px;
+		height: 27px;
+	}
+
+	.hero__title {
+		margin-bottom: 11px
+	}
+
+	.gallery {
+		padding-bottom: 78px;
+	}
+
+	.gallery__container {
+		flex-direction: column;
+	}
+
+	.gallery__choices {
+		margin-bottom: 40px
+	}
+
+	.gallery__left {
+		max-width: 42%;
+		margin-bottom: 15px;
+		margin-right: 0;
+	}
+
+	.catalogue {
+		padding-bottom: 70px
+	}
+
+	.catalogue__tabs {
+		flex-direction: column-reverse;
+	}
+
+	.accordion__list {
+		width: 100%;
+		margin-bottom: 50px
+	}
+
+	.accordion__content-list {
+		column-count: 3;
+		padding-bottom: 33px
+	}
+
+	.catalogue__descr {
+		margin-bottom: 20px
+	}
+
+	.catalogue__people {
+		margin-right: 0;
+		max-width: none;
+	}
+
+	.empty-people {
+		width: 100%;
+	}
+
+	.catalogue__people-desc {
+		padding-left: 2px
+	}
+
+	.people-description {
+		margin-bottom: 7px
+	}
+
+	.events {
+		margin-bottom: 80px
+	}
+
+
+	.events__card-pad {
+		padding-left: 37px;
+    	padding-right: 19px;
+	}
+
+	.ev_crd-pad {
+		margin-bottom: 5px
+	}
+
+	.events__card-info {
+		min-height: 368px;
+	}
+
+	.events__swiper-pagination.swiper-pagination {
+		bottom: -3px;
+	}
+
+	.swiper-events {
+		padding-bottom: 40px
+	}
+
+	.project__partners-title {
+		margin-bottom: 28px
+	}
+
+	.projects__descr {
+		margin-bottom: 28px
+	}
+
+	.projects__swiper-slide {
+		height: 108px;
+	}
+
+	.location__form {
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+	.location__form-input {
+		min-width: 324px;
+		margin-right: 0
+	}
+
+	.location__form-info:first-child {
+		margin-right: 20px
+	}
+
+	.location__form-btn {
+		width: 100%;
+		min-width: 0;
+		max-width: 316px;
+	}
+
+	.location__center {
+		margin-right: 0
+	}
+
+}
+
+/*	< 762
+	.just-validate-error-label {
+		top: -13px;
+		font-size: 12px
+	}*/
 
