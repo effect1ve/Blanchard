@@ -140,9 +140,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // swiper-gallery & gallery_choices & modal
 
   const gallerySwiper = new Swiper('.swiper-gallery', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 44,
-    slidesPerGroup: 3,
     loop: false,
     // loopFillGroupWithBlank: true,
     pagination: {
