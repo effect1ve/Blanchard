@@ -163,7 +163,7 @@
 		left: 100%;
 		padding-left: 5px;
 		margin-left: 5px;
-		transition: all 10s ease;
+		transition: all .4s ease;
 	}
 
 	.header__search-form {
@@ -606,7 +606,7 @@
 	}
 
 	.search-input {
-		width: 150px;
+		width: 20vw;
 		font-size: 12px;
 	}
 
