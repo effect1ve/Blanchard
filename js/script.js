@@ -282,7 +282,7 @@ document.addEventListener('DOMContentLoaded', function() {
       clickable: true,
     },
      breakpoints: {
-    500: {
+    615: {
       slidesPerView: 2,
       spaceBetween: 34,
       slidesPerGroup: 2,
