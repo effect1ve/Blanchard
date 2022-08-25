@@ -16,6 +16,9 @@
 <body>
   <main>
     <section class="header">
+    <div class="header__search-320">
+      
+    </div>
     <div class="container header__container">
       <div class="burger">
         <svg width="36" height="29" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +35,7 @@
       </div>  
       <a class="header__logo" aria-label='Логотип Бланчард' tabindex="0">
         <picture>
-          <source media>
+          <source media='(max-width:450px)' srcset='img/logo-320.png'>
           <source media= "(max-width:1200px)" srcset = 'img/logo-1024.png'>
           <img src="img/main_logo.png" alt="Blanchard" class="header__logo-img">
         </picture>  
@@ -54,6 +57,9 @@
           </svg>
         </span>
       </div>
+
+      
+
       <div class="header__row">
         <div class="header__wrapper flex">
           <nav class="header__nav">
@@ -311,6 +317,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-1">
                 <picture>
+                  <source media='(max-width: 450px)' srcset='img/gallery-320-1.jpg'>
                   <source media='(max-width: 962px)' srcset='img/gallery-768-1.jpg'>
                   <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-1.jpg'>
                   <img src="img/gallery_item-1_1920.jpg" alt="">
@@ -320,6 +327,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-2">
                 <picture>
+                  <source media='(max-width: 450px)' srcset='img/gallery-320-2.jpg'>
                   <source media='(max-width: 962px)' srcset='img/gallery-768-2.jpg'>
                   <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-2.jpg'>
                   <img src="img/gallery_item-2_1920.jpg" alt="">
@@ -329,6 +337,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-3">
                 <picture>
+                  <source media='(max-width: 450px)' srcset='img/gallery-320-3.jpg'>
                   <source media='(max-width: 962px)' srcset='img/gallery-768-3.jpg'>
                   <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-3.jpg'>
                   <img src="img/gallery_item-3_1920.jpg" alt="">
@@ -338,6 +347,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-4">
                 <picture>
+                  <source media='(max-width: 450px)' srcset='img/gallery-320-4.jpg'>
                   <source media='(max-width: 962px)' srcset='img/gallery-768-4.jpg'>
                   <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-4.jpg'>
                   <img src="img/gallery_item-4_1920.jpg" alt="">
@@ -347,6 +357,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-5">
                 <picture>
+                  <source media='(max-width: 450px)' srcset='img/gallery-320-5.jpg'>
                   <source media='(max-width: 962px)' srcset='img/gallery-768-5.jpg'>
                   <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-5.jpg'>
                   <img src="img/gallery_item-5_1920.jpg" alt="">
@@ -356,6 +367,7 @@
             <div class="swiper-slide">
               <button class="gallery__btn btn" data-path="pop-6">
                 <picture>
+                  <source media='(max-width: 450px)' srcset='img/gallery-320-6.jpg'>
                   <source media='(max-width: 962px)' srcset='img/gallery-768-6.jpg'>
                   <source media="(max-width: 1200px)" srcset = 'img/gallery-1024-6.jpg'>
                   <img src="img/gallery_item-6_1920.jpg" alt="">
@@ -368,6 +380,9 @@
           <div class="modal-overlay">
             <div class="modal modal--1" data-target="pop-1">
               <picture>
+                <source media='(max-width: 450px)' srcset='img/modal-320.png'>
+                <source media='(max-width: 770px)' srcset='img/modal-768.jpg'>
+                <source media='(max-width: 1200px)' srcset='img/gallery-modal-1024.jpg'>
                 <img src="img/gallery-modal-1.jpg" alt="" class="modal__img">
               </picture>
               <div class="modal__description">
@@ -393,6 +408,9 @@
             </div>
             <div class="modal modal--2" data-target="pop-2">
               <picture>
+                <source media='(max-width: 450px)' srcset='img/modal-320.png'>
+                <source media='(max-width: 770px)' srcset='img/modal-768.jpg'>
+                <source media='(max-width: 1200px)' srcset='img/gallery-modal-1024.jpg'>
                 <img src="img/gallery-modal-2.jpg" alt="" class="modal__img">
               </picture>
               <div class="modal__description">
@@ -418,6 +436,9 @@
             </div> 
             <div class="modal modal--3" data-target="pop-3">
               <picture>
+                <source media='(max-width: 450px)' srcset='img/modal-320.png'>
+                <source media='(max-width: 770px)' srcset='img/modal-768.jpg'>
+                <source media='(max-width: 1200px)' srcset='img/gallery-modal-1024.jpg'>
                 <img src="img/gallery-modal-3.jpg" alt="" class="modal__img">
               </picture>
               <div class="modal__description">
@@ -443,6 +464,9 @@
             </div>  
             <div class="modal modal--4" data-target="pop-4">
               <picture>
+                <source media='(max-width: 450px)' srcset='img/modal-320.png'>
+                <source media='(max-width: 770px)' srcset='img/modal-768.jpg'>
+                <source media='(max-width: 1200px)' srcset='img/gallery-modal-1024.jpg'>
                 <img src="img/gallery-modal-4.jpg" alt="" class="modal__img">
               </picture>
               <div class="modal__description">
@@ -468,6 +492,9 @@
             </div>
             <div class="modal modal--5" data-target="pop-5">
               <picture>
+                <source media='(max-width: 450px)' srcset='img/modal-320.png'>
+                <source media='(max-width: 770px)' srcset='img/modal-768.jpg'>
+                <source media='(max-width: 1200px)' srcset='img/gallery-modal-1024.jpg'>
                 <img src="img/gallery-modal-5.jpg" alt="" class="modal__img">
               </picture>
               <div class="modal__description">
@@ -493,6 +520,9 @@
             </div>  
             <div class="modal modal--6" data-target="pop-6">
               <picture>
+                <source media='(max-width: 450px)' srcset='img/modal-320.png'>
+                <source media='(max-width: 770px)' srcset='img/modal-768.jpg'>
+                <source media='(max-width: 1200px)' srcset='img/gallery-modal-1024.jpg'>
                 <img src="img/gallery-modal-6.jpg" alt="" class="modal__img">
               </picture>
               <div class="modal__description">
@@ -593,7 +623,7 @@
                     <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Бреа, Людовико</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Бьяджо д'нтоние Туччи</a></button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Бьяджо д'Антоние Туччи</a></button>
                   </li>
              <!--    </ul> -->
                 <!-- <ul class="accordion__content-list"> -->
@@ -633,7 +663,7 @@
                     <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Пезеллино</a></button>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Пьетро Перуджио</a></button>
+                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Пьетро Перуджино</a></button>
                   </li>
                   <li class="accordion__content-item">
                     <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Перуцци, Бальдассаре</a></button>
@@ -770,6 +800,7 @@
             <div class="swiper-slide events__slide">
               <div class="events__card flex">
                 <picture>
+                  <source media='(max-width: 450px)' srcset='img/events-320-1.jpg'>
                   <source media='(max-width: 962px)' srcset='img/events-768-1.jpg'>
                   <source media='(max-width: 1200px)' srcset='img/events-1024-1.jpg'>
                   <img src="img/events_card-1920-1.jpg" alt="" class="events__card-img">
@@ -803,6 +834,7 @@
             <div class="swiper-slide events__slide">
               <div class="events__card flex">
                 <picture>
+                  <source media='(max-width: 450px)' srcset='img/events-320-2.jpg'>
                   <source media='(max-width: 962px)' srcset='img/events-768-2.jpg'>
                   <source media='(max-width: 1200px)' srcset='img/events-1024-2.jpg'>
                   <img src="img/events_card-1920-2.jpg" alt="" class="events__card-img">
@@ -834,6 +866,7 @@
             <div class="swiper-slide events__slide">
               <div class="events__card flex">
                 <picture>
+                  <source media='(max-width: 450px)' srcset='img/events-320-3.jpg'>
                   <source media='(max-width: 962px)' srcset='img/events-768-3.jpg'>
                   <source media='(max-width: 1200px)' srcset='img/events-1024-3.jpg'>
                   <img src="img/events_card-1920-3.jpg" alt="" class="events__card-img">
@@ -867,6 +900,7 @@
             <div class="swiper-slide events__slide">
               <div class="events__card flex">
                 <picture>
+                  <source media='(max-width: 450px)' srcset='img/events-320-4.jpg'>
                   <source media='(max-width: 962px)' srcset='img/events-768-4.jpg'>
                   <source media='(max-width: 1200px)' srcset='img/events-1024-4.jpg'>
                   <img src="img/events_card-1920-4.jpg" alt="" class="events__card-img">
@@ -899,6 +933,7 @@
             <div class="swiper-slide events__slide">
               <div class="events__card flex">
                 <picture>
+                  <source media='(max-width: 450px)' srcset='img/events-320-5.jpg'>
                   <source media='(max-width: 962px)' srcset='img/events-768-5.jpg'>
                   <source media='(max-width: 1200px)' srcset='img/events-1024-5.jpg'>
                   <img src="img/events_card-1920-5.jpg" alt="" class="events__card-img">
@@ -1016,7 +1051,7 @@
               name="phone"
               id="tel">
           </label>
-          <button type="submit" class="location__form-btn btn">Заказать обратный звонок</button>
+          <button type="submit" class="location__form-btn btn">Заказать<span class="location-text-hide"> обратный звонок</span></button>
         </form>
       </div> 
       <div class="location__right">
@@ -1048,7 +1083,7 @@
       </div>   
     </div>
   </section>
-  <section class="map" id="map">
+  <section class="map small-map" id="map">
     <h2 class="visually-hidden">Мы на карте</h2>
     <div class="container"></div>
   </section>
@@ -1056,7 +1091,10 @@
   <footer class="footer">
     <div class="container footer__container">
       <a class="footer__logo" aria-label='Логотип Бланчард' tabindex="0">
-        <img src="img/main_logo.png" alt="">
+        <picture>
+          <source media='(max-width:450px)' srcset='img/logo-320.png'>
+          <img src="img/main_logo.png" alt="">
+        </picture>
       </a>
       <ul class="footer__list flex">
         <li class="footer__item">

@@ -1,6 +1,7 @@
 // Функция ymaps.ready() будет вызвана, когда
     // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
     ymaps.ready(init);
+    bigMap = false;
     function init(){
         // Создание карты.
         var myMap = new ymaps.Map("map", {
@@ -47,4 +48,22 @@
 //         // Удалим с карты «Ползунок масштаба».
 // myMap.controls.remove('zoomControl');
     }
+
+    function toggle () {
+    bigMap = !bigMap;
+
+    // Добавляем/убираем CSS-класс, определяющий размеры контейнера карты,
+    // заданные в абсолютных единицах (300x200 px).
+    if (bigMap) {
+        $('#map').removeClass('small-map');
+    } else {
+        $('#map').addClass('small-map');
+    }
+
+    // Если выставлен флаг, сообщаем карте, что ей следует
+    // привести свои размеры к размерам контейнера.
+    if ($('#checkbox').prop('checked')) {
+        myMap.container.fitToViewport();
+    }
+}
     
