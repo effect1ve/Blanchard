@@ -60,18 +60,28 @@ document.addEventListener('DOMContentLoaded', function() {
   const tabletFormClose = document.querySelector('.form-close');
   const tabletFormBtn = document.querySelector('.tablet-form-btn');
   const tabletInput = document.querySelector('.tablet-form-input');
+  const mobileForm = document.querySelector('.header__search-320');
 
-  tabletFormBtn.addEventListener('click', function() {
-    tabletForm.style.transform = 'translateX(-24vw)';
-    tabletInput.style.display = 'inline-block';
-    setTimeout(() => tabletFormClose.classList.add('active'), 250);
-  });
+      tabletFormBtn.addEventListener('click', function() {
+      tabletForm.style.transform = 'translateX(-24vw)';
+      tabletInput.style.display = 'inline-block';
+      setTimeout(() => tabletFormClose.classList.add('active'), 250);
+    });
 
-  tabletFormClose.addEventListener('click', function() {
-    tabletForm.style.transform = 'translateX(0)';
-    tabletFormClose.classList.remove('active');
-    setTimeout(() => tabletInput.style.display = 'none', 300);
-  });
+    tabletFormClose.addEventListener('click', function() {
+      tabletForm.style.transform = 'translateX(0)';
+      tabletFormClose.classList.remove('active');
+      setTimeout(() => tabletInput.style.display = 'none', 300);
+    });
+  // if (document.documentElement.clientWidth > 450) {
+
+  // }
+
+  // if (document.documentElement.clientWidth < 450) {
+  //   tabletFormBtn.addEventListener('click', function() {
+  //     mobileForm.style.display = 'block';
+  //   })
+  // }
 
 //swiper-hero
 
