@@ -62,7 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const tabletInput = document.querySelector('.tablet-form-input');
   const mobileForm = document.querySelector('.header__search-320');
 
-      tabletFormBtn.addEventListener('click', function() {
+  if (document.documentElement.clientWidth > 450) {
+     tabletFormBtn.addEventListener('click', function() {
       tabletForm.style.transform = 'translateX(-24vw)';
       tabletInput.style.display = 'inline-block';
       setTimeout(() => tabletFormClose.classList.add('active'), 250);
@@ -73,15 +74,21 @@ document.addEventListener('DOMContentLoaded', function() {
       tabletFormClose.classList.remove('active');
       setTimeout(() => tabletInput.style.display = 'none', 300);
     });
-  // if (document.documentElement.clientWidth > 450) {
+  } else {
+    tabletFormBtn.addEventListener('click', function() {
+      mobileForm.style.display = 'block';
+      setTimeout(() => tabletFormClose.classList.add('active'), 250);
+      tabletInput.classList.add('search-mobile');
+      tabletFormBtn.classList.add('search-mobile-icon');
+    })
 
-  // }
-
-  // if (document.documentElement.clientWidth < 450) {
-  //   tabletFormBtn.addEventListener('click', function() {
-  //     mobileForm.style.display = 'block';
-  //   })
-  // }
+    tabletFormClose.addEventListener('click', function() {
+      mobileForm.style.display = 'none';
+      tabletFormClose.classList.remove('active');
+      tabletInput.classList.remove('search-mobile');
+      tabletFormBtn.classList.remove('search-mobile-icon');
+    })
+  };
 
 //swiper-hero
 
