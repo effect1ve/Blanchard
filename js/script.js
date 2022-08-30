@@ -25,6 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
     searchInp.value = '';
   })
 
+  const searchBtnTablet = document.querySelector('#search-btn-tablet');
+  const searchInpTablet = document.querySelector('#search-input-tablet');
+  searchBtnTablet.addEventListener('click', function() {
+    searchInpTablet.value = '';
+  })
+
 // burger
 
   const burger = document.querySelector('.burger');

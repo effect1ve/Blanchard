@@ -79,6 +79,10 @@
 
 @media (max-width: 1200px) {
 
+	.header {
+		overflow: hidden;
+	}
+
 	.header__container {
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
@@ -609,6 +613,10 @@
 	.projects__swiper-slide {
 		height: 108px;
 	}
+
+	.projects__swiper-slide {
+		outline-offset: -2px;
+}
 
 	.location__form {
 		-ms-flex-wrap: wrap;

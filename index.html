@@ -16,7 +16,7 @@
 <body>
   <main>
     <section class="header">
-      
+      <h2 class="visually-hidden">Blanchard-художественная галерея</h2>
     <div class="header__search-320">
       
     </div>
@@ -45,13 +45,13 @@
 
       <div class="header__search">
         <form id="header__search-form" class="header__search-form">
-          <button class="btn search-btn tablet-form-btn" id="search-btn" type="button">
+          <button class="btn search-btn tablet-form-btn" id="search-btn-tablet" type="button">
             <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
             </svg>
           </button>
-          <input type="text" class="search-input tablet-form-input" id="search-input" type="search" placeholder="">
+          <input class="search-input tablet-form-input" id="search-input-tablet" type="search" placeholder="">
         </form>
         <span class="form-close">
           <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -600,80 +600,76 @@
               <div class="accordion__content">
                 <ul class="accordion__content-list">
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab"  data-tab="#tab_empty"><a href="#tab_empty">Бенедетто ди Биндо</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Бенедетто ди Биндо</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab"  data-tab="#tab_empty"><a href="#tab_empty">Бергоньоне, Амброджо</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Бергоньоне, Амброджо</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab"  data-tab="#tab_empty"><a href="#tab_empty">Биссоло, Франческо</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Биссоло, Франческо</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Больтраффио, Джованни</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Больтраффио, Джованни</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Бонсиньори, Франческо</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Бонсиньори, Франческо</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Боттичини, Рафаэлло</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Боттичини, Рафаэлло</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Брамантино</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Брамантино</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Бреа, Людовико</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Бреа, Людовико</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Бьяджо д'Антоние Туччи</a></button>
-                  </li>
-             <!--    </ul> -->
-                <!-- <ul class="accordion__content-list"> -->
-                  <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Веккьетта</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Бьяджо д'Антоние Туччи</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Андреа Верроккьо</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Веккьетта</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab active" data-tab="#tab_1" aria-label="Доменико Гирландайо"><a href="#tab_1">Доменико Гирландайо</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Андреа Верроккьо</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Беноццо Гоццоли</a></button>
+                    <a class="accordion__content-tab active" href="#tab_1" data-tab="#tab_1" aria-label="Доменико Гирландайо"><span class="tab-text">Доменико Гирландайо</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Граначчи, Франческо</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Беноццо Гоццоли</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Грегорио Ди Чекко</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Граначчи, Франческо</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Джованни да Удине</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Грегорио Ди Чекко</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Джованни ди Паоло</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Джованни да Удине</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Джорджоне</a></button>
-                  </li>
-              <!--   </ul> -->
-           <!--      <ul class="accordion__content-list"> -->
-                  <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Парентино, Бернардо</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Джованни ди Паоло</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Пезеллино</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Джорджоне</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Пьетро Перуджино</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Парентино, Бернардо</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Перуцци, Бальдассаре</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Пезеллино</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Пизанелло</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Пьетро Перуджино</span></a>
                   </li>
                   <li class="accordion__content-item">
-                    <button class="accordion__content-tab" data-tab="#tab_empty"><a href="#tab_empty">Пинтуриккьо</a></button>
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Перуцци, Бальдассаре</span></a>
+                  </li>
+                  <li class="accordion__content-item">
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Пизанелло</span></a>
+                  </li>
+                  <li class="accordion__content-item">
+                    <a class="accordion__content-tab" href="#tab_empty" data-tab="#tab_empty"><span class="tab-text">Пинтуриккьо</span></a>
                   </li>
                 </ul>
               </div>
