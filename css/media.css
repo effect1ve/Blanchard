@@ -241,17 +241,17 @@
 	}
 
 
-.hero-slide-1 {
-	background-image: url('../img/hero-1024-1.jpg');
-}
+	.hero-slide-1 {
+		background-image: url('../img/hero-1024-1.jpg');
+	}
 
-.hero-slide-2 {
-	background-image: url('../img/hero-1024-2.jpg');
-}
+	.hero-slide-2 {
+		background-image: url('../img/hero-1024-2.jpg');
+	}
 
-.hero-slide-3 {
-	background-image: url('../img/hero-1024-3.jpg');
-}
+	.hero-slide-3 {
+		background-image: url('../img/hero-1024-3.jpg');
+	}
 
 	.hero__container {
 		max-width: none;
@@ -302,11 +302,11 @@
 
 	.events {
 		min-height: 0;
-		margin-bottom: 91px
+		margin-bottom: 78px
 	}
 
 	.swiper-events {
-		padding-bottom: 30px;
+		padding-bottom: 13px;
 	}
 
 	.events__card-wrapper {
@@ -360,7 +360,7 @@
 	}
 
 	.events__card-info {
-		min-height: 400px;
+		min-height: 367px;
 	}
 
 	.projects__swiper-slide {
@@ -419,6 +419,14 @@
 
 	.location__right-links {
 		margin-bottom: 21px;
+	}
+
+	.location__center {
+		margin-right: 0;
+	}
+
+	.location__left {
+		margin-bottom: 11px;
 	}
 
 	.footer {
