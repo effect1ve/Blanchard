@@ -40,14 +40,14 @@ document.addEventListener('DOMContentLoaded', function() {
   burger.addEventListener('click', function() {
     burger.classList.add('hide');
     burgerClose.classList.add('active');
-    burgerMenu.classList.add('flex');
+    burgerMenu.classList.add('active-opacity');
     document.body.style.overflow = 'hidden';
   })
 
   burgerClose.addEventListener('click', function() {
     burger.classList.remove('hide');
     burgerClose.classList.remove('active');
-    burgerMenu.classList.remove('flex');
+    burgerMenu.classList.remove('active-opacity');
     document.body.style.overflow = '';
   })
 
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
       elem.addEventListener('click', function() {
         burger.classList.remove('hide');
         burgerClose.classList.remove('active');
-        burgerMenu.classList.remove('flex');
+        burgerMenu.classList.remove('active-opacity');
         document.body.style.overflow = '';
       })
     })

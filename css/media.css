@@ -109,10 +109,24 @@
 		width: 100%;
 		height: 100vh;
 		background: rgb(0,0,0, .9);
-		z-index: 1;
 		padding: 77px 50px 51px 48px;
 		/*transform: translateY(-101%);*/
 		display: none;
+	}
+
+		@keyframes ani {
+	  0% {opacity: 0;}
+	  100% {opacity: 1;}
+	}
+	.active-opacity {
+		opacity: 1;
+		animation: ani 1s forwards;
+		z-index: 1;
+		display: flex;
+	}
+
+	.active {
+		display: block;
 	}
 
 	.header__list {
