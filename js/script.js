@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   })
 
-  const btns = document.querySelectorAll(".menu__btn");
+  const btns = document.querySelectorAll(".menu-list__btn");
   const dropdowns = document.querySelectorAll(".dropdown");
   const activeClassdropdowns = "dropdown__active";
   const activeClassbtns = "btn__active";
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   document.body.addEventListener('click',function(event) {
-    if(!event.target.closest('.menu__item')) {
+    if(!event.target.closest('.menu-list__item')) {
       btns.forEach(el => {
         el.classList.remove(activeClassbtns)
       });
@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  const tabsBtn = document.querySelectorAll('.accordion__content-tab');
+  const tabsBtn = document.querySelectorAll('.accordion-list__content-tab');
   const tabsItem = document.querySelectorAll('.catalogue__people');
 
   tabsBtn.forEach(tabOnClick);

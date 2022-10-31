@@ -1,6 +1,6 @@
 @media (max-width: 1600px) {
 
-	.accordion__content-list {
+	.accordion-list__content-list {
 		margin: 0;
 		-webkit-column-count: 2;
 		   -moz-column-count: 2;
@@ -292,7 +292,7 @@
 		margin-bottom: 39px
 	}
 
-	.accordion__list {
+	.accordion-list {
 		width: 750px;
 	}
 
@@ -303,10 +303,6 @@
 	.events {
 		min-height: 0;
 		margin-bottom: 78px
-	}
-
-	.swiper-events {
-		padding-bottom: 13px;
 	}
 
 	.events__card-wrapper {
@@ -355,7 +351,7 @@
 		margin-bottom: 5px
 	}
 
-	.ev_crd-pad {
+	.ev-crd-pad {
 		margin-bottom: 8px
 	}
 
@@ -367,7 +363,7 @@
 		height: 128px;
 	}
 
-	.partners__wrapper {
+	.partners-wrapper {
 		padding: 0 54px;
 	}
 
@@ -486,6 +482,19 @@
 
 }
 
+@media(max-width: 1046px) {
+/*
+	.swiper-events {
+		padding-bottom: 13px;
+	}*/
+
+	.events__card-info {
+		min-height: 465px;
+		margin-bottom: 0;
+	}
+
+}
+
 @media (max-width: 962px) {
 	
 	.header__container {
@@ -547,12 +556,12 @@
 		        flex-direction: column-reverse;
 	}
 
-	.accordion__list {
+	.accordion-list {
 		width: 100%;
 		margin-bottom: 50px
 	}
 
-	.accordion__content-list {
+	.accordion-list__content-list {
 		-webkit-column-count: 3;
 		   -moz-column-count: 3;
 		        column-count: 3;
@@ -590,7 +599,7 @@
     	padding-right: 19px;
 	}
 
-	.ev_crd-pad {
+	.ev-crd-pad {
 		margin-bottom: 5px
 	}
 
@@ -606,7 +615,7 @@
 		padding-bottom: 40px
 	}
 
-	.project__partners-title {
+	.partners-title {
 		margin-bottom: 28px
 	}
 
@@ -869,7 +878,7 @@
 		font-size: 12px
 	}
 
-	.accordion__content-list {
+	.accordion-list__content-list {
 		-webkit-column-count: 2;
 		   -moz-column-count: 2;
 		        column-count: 2;
@@ -1035,7 +1044,7 @@
 		background-color: #ececec;
 	}
 
-	.accordion__content-list {
+	.accordion-list__content-list {
 		-webkit-column-count: 1;
 		   -moz-column-count: 1;
 		        column-count: 1;
@@ -1062,13 +1071,13 @@
 		padding-top: 20px;
 	}
 
-	.accordion__empty-img {
+	.accordion-list__empty-img {
 		width: 79px;
 	   height: 118px;
 	   margin: 5px;
 	}
 
-	.accordion__empty-title {
+	.accordion-list__empty-title {
 		font-size: 18px;
 		line-height: 22px;
 	}
@@ -1100,7 +1109,7 @@
 		margin-bottom: 11px;
 	}
 
-	.ev_crd-pad {
+	.ev-crd-pad {
 		margin-bottom: 4px;
 	}
 
@@ -1128,7 +1137,7 @@
 		margin-bottom: 10px;
 	}
 
-	.project__partners-title {
+	.partners-title {
 		font-size: 18px;
 		margin-bottom: 11px;
 	}
@@ -1189,7 +1198,7 @@
 		padding-top: 3px;
 	}
 
-	.partners__wrapper {
+	.partners-wrapper {
 		padding: 0 48px;
 	}
 
