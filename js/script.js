@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const burgerMenu = document.querySelector('.header__row');
 
   burger.addEventListener('click', function() {
+    burgerMenu.classList.remove('opacity-close');
+    burgerMenu.classList.remove('hide');
     burger.classList.add('hide');
     burgerClose.classList.add('active');
     burgerMenu.classList.add('active-opacity');
@@ -45,9 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
   })
 
   burgerClose.addEventListener('click', function() {
+    burgerMenu.classList.add('opacity-close');
     burger.classList.remove('hide');
     burgerClose.classList.remove('active');
-    burgerMenu.classList.remove('active-opacity');
     document.body.style.overflow = '';
   })
 
@@ -57,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         burger.classList.remove('hide');
         burgerClose.classList.remove('active');
         burgerMenu.classList.remove('active-opacity');
+        burgerMenu.classList.add('hide');
         document.body.style.overflow = '';
       })
     })
@@ -82,17 +85,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   } else {
     tabletFormBtn.addEventListener('click', function() {
-      mobileForm.style.display = 'block';
+      mobileForm.classList.add('header__search-320-visible');
       setTimeout(() => tabletFormClose.classList.add('active'), 250);
       tabletInput.classList.add('search-mobile');
       tabletFormBtn.classList.add('search-mobile-icon');
+      mobileForm.classList.remove('search-320-hide');
+
     })
 
     tabletFormClose.addEventListener('click', function() {
-      mobileForm.style.display = 'none';
       tabletFormClose.classList.remove('active');
       tabletInput.classList.remove('search-mobile');
       tabletFormBtn.classList.remove('search-mobile-icon');
+      mobileForm.classList.add('search-320-hide');
+      // mobileForm.classList.remove('header__search-320-visible');
     })
   };
 

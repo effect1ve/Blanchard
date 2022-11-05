@@ -110,19 +110,43 @@
 		height: 100vh;
 		background: rgb(0,0,0, .9);
 		padding: 77px 50px 51px 48px;
-		/*transform: translateY(-101%);*/
-		display: none;
+		visibility: hidden;
 	}
 
-		@keyframes ani {
+	@-webkit-keyframes ani {
 	  0% {opacity: 0;}
 	  100% {opacity: 1;}
 	}
+
+	@keyframes ani {
+	  0% {opacity: 0;}
+	  100% {opacity: 1;}
+	}
+	
 	.active-opacity {
-		opacity: 1;
-		animation: ani 1s forwards;
-		z-index: 1;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-animation: ani 1s forwards;
+		        animation: ani 1s forwards;
+		z-index: 1;
+		visibility: visible;
+	}
+
+	@-webkit-keyframes aniClose {
+		0% {opacity: 1;}
+		100% {opacity: 0;}
+	}
+
+	@keyframes aniClose {
+		0% {opacity: 1;}
+		100% {opacity: 0;}
+	}
+
+	.opacity-close {
+		-webkit-animation: aniClose 1s forwards;
+		        animation: aniClose 1s forwards;
+		z-index: -1;
 	}
 
 	.active {
@@ -910,13 +934,45 @@
 		padding-left: 10px;
 	}
 
+	@-webkit-keyframes searchAni {
+		0% {opacity: 0;}
+		100% {opacity: 1;}
+	}
+
+	@keyframes searchAni {
+		0% {opacity: 0;}
+		100% {opacity: 1;}
+	}
+
 	.header__search-320 {
-		display: none;
+		visibility: hidden;
 		position: absolute;
 		width: 100%;
 		height: 75px;
 		background-color: rgba(0, 0, 0, .9);
+	}
+
+	.header__search-320-visible {
+		visibility: visible;
 		z-index: 1;
+		-webkit-animation: searchAni 1s forwards;
+		        animation: searchAni 1s forwards;
+	}
+
+	@-webkit-keyframes closeSearch {
+		0% { opacity: 1;}
+		100% { opacity: 0; }
+	}
+
+	@keyframes closeSearch {
+		0% { opacity: 1;}
+		100% { opacity: 0; }
+	}
+
+	.search-320-hide {
+		-webkit-animation: closeSearch 1s forwards;
+		        animation: closeSearch 1s forwards;
+		z-index: -1;
 	}
 
 	.form-close {
@@ -942,6 +998,12 @@
 		 position: absolute;
 	    left: 20vw;
 	    z-index: 1;
+	}
+
+	.search-mobile,
+	.search-mobile-icon {
+		-webkit-animation: ani 1s forwards;
+		        animation: ani 1s forwards;
 	}
 
 	.header__container {
@@ -1204,12 +1266,12 @@
 
 	.projects__btn-next:after{
 		padding-left: 3px;
-		padding-top: 3px;
+		padding-top: 2px;
 	}
 
 	.projects__btn-prev:after {
 		padding-right: 3px;
-		padding-top: 3px;
+		padding-top: 2px;
 	}
 
 	.partners-wrapper {
