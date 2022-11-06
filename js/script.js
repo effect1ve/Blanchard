@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
         burger.classList.remove('hide');
         burgerClose.classList.remove('active');
         burgerMenu.classList.remove('active-opacity');
-        burgerMenu.classList.add('hide');
         document.body.style.overflow = '';
       })
     })
@@ -98,9 +97,21 @@ document.addEventListener('DOMContentLoaded', function() {
       tabletInput.classList.remove('search-mobile');
       tabletFormBtn.classList.remove('search-mobile-icon');
       mobileForm.classList.add('search-320-hide');
-      // mobileForm.classList.remove('header__search-320-visible');
     })
+
   };
+
+  if (document.documentElement.clientWidth < 1200) {
+     navItem.forEach(elem => {
+      elem.addEventListener('click', function() {
+        burger.classList.remove('hide');
+        burgerClose.classList.remove('active');
+        burgerMenu.classList.remove('active-opacity');
+        burgerMenu.classList.add('hide');
+        document.body.style.overflow = '';
+      })
+    })
+  }
 
 //swiper-hero
 
